@@ -30,14 +30,14 @@ export function PropertyCard({
   const cover = property.images[0];
 
   return (
-    <article
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-ink-200
-                 bg-white shadow-card transition-shadow duration-300 hover:shadow-card-hover
-                 focus-within:ring-2 focus-within:ring-brand-500 focus-within:ring-offset-2"
-    >
-      {/* Fixed aspect ratio reserves the space before the image decodes, which
-          is what holds CLS at 0 on a slow connection. */}
-      <div className="relative aspect-[3/2] overflow-hidden bg-ink-200">
+    <article className="group relative flex flex-col focus-within:outline-none">
+      {/*
+        Portrait, not landscape. 4:5 gives the photography roughly 60% more
+        height in the same column, which is what makes a listing read as
+        editorial rather than as a search result. The fixed ratio still
+        reserves space before the image decodes, holding CLS at 0.
+      */}
+      <div className="relative aspect-4/5 overflow-hidden rounded-sm bg-ink-200">
         {cover ? (
           <Image
             src={cover.url}
@@ -45,96 +45,104 @@ export function PropertyCard({
             fill
             // Mirrors the grid below: 1 column under 640, 2 under 1024, else 3.
             sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+            // Slow, long zoom. A fast scale reads as a UI affordance; this
+            // reads as the image breathing.
+            className="object-cover transition-transform duration-900 ease-out group-hover:scale-105"
             priority={priority}
             loading={priority ? 'eager' : 'lazy'}
           />
         ) : null}
 
-        <div className="absolute left-3 top-3 flex flex-wrap gap-2">
-          <span className="rounded-full bg-ink-900/85 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm">
+        {/* Scrim only at the top, so the status chip stays legible on a pale
+            image without greying the whole photograph. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-linear-to-b from-ink-900/35 to-transparent"
+        />
+
+        <div className="absolute left-4 top-4 flex flex-wrap gap-2">
+          <span className="eyebrow rounded-full bg-white/92 px-3 py-1.5 text-[10px] text-ink-800 backdrop-blur-sm">
             {formatStatus(property.status)}
           </span>
           {property.furnished ? (
-            <span className="rounded-full bg-sand/95 px-2.5 py-1 text-[11px] font-semibold text-ink-900">
+            <span className="eyebrow rounded-full bg-sand/95 px-3 py-1.5 text-[10px] text-ink-900">
               Furnished
             </span>
           ) : null}
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col gap-3 p-4 sm:p-5">
-        <div className="flex items-baseline justify-between gap-3">
-          <p className="font-display text-xl text-ink-900 sm:text-2xl">
-            {formatPrice(property.priceInr)}
-          </p>
-          <p className="text-xs font-medium uppercase tracking-wide text-ink-400">
-            {formatType(property.type)}
-          </p>
-        </div>
+      <div className="flex flex-1 flex-col pt-5">
+        {/* Price leads, in the display face and at a size that carries. */}
+        <p className="font-display text-3xl leading-none text-ink-900">
+          {formatPrice(property.priceInr)}
+        </p>
 
-        <h3 className="font-sans text-sm font-semibold leading-snug text-ink-800">
+        <h3 className="mt-3 font-sans text-[0.9375rem] font-medium leading-snug text-ink-800">
           {/* Stretched link: the whole card is clickable but there is exactly
               one tab stop, and the accessible name is the title. */}
           <Link
             href={`/properties/${property.slug}`}
-            className="before:absolute before:inset-0 before:content-[''] focus:outline-none"
+            className="before:absolute before:inset-0 before:content-[''] focus-visible:outline-none"
           >
-            <span className="line-clamp-2">{property.title}</span>
+            <span className="line-clamp-2 transition-colors group-hover:text-brand-600">
+              {property.title}
+            </span>
           </Link>
         </h3>
 
-        <p className="flex items-center gap-1.5 text-sm text-ink-500">
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            className="size-4 shrink-0 text-ink-400"
-            fill="currentColor"
-          >
-            <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
-          </svg>
-          <span className="truncate">
-            {property.locality}, {property.city}
-          </span>
+        <p className="mt-1.5 text-sm text-ink-500">
+          {property.locality}, {property.city}
         </p>
 
-        <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-ink-200 pt-3 text-sm">
-          <div>
-            <dt className="text-[11px] uppercase tracking-wide text-ink-400">Config</dt>
-            <dd className="font-medium text-ink-700">
-              {property.type === 'plot' ? 'Plot' : `${property.bhk} BHK`}
-            </dd>
-          </div>
-          <div>
-            <dt className="text-[11px] uppercase tracking-wide text-ink-400">Area</dt>
-            <dd className="font-medium text-ink-700">{formatArea(property.areaSqft)}</dd>
-          </div>
-          <div>
-            <dt className="text-[11px] uppercase tracking-wide text-ink-400">Bath</dt>
-            <dd className="font-medium text-ink-700">
-              {property.bathrooms > 0 ? property.bathrooms : '—'}
-            </dd>
-          </div>
+        {/*
+          Restrained metadata row: a single hairline-separated line of small
+          caps. The previous three-column <dl> with its own labels competed
+          with the price for attention.
+        */}
+        <dl className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-ink-200 pt-3">
+          <MetaItem label="Configuration">
+            {property.type === 'plot' ? 'Plot' : `${property.bhk} BHK`}
+          </MetaItem>
+          <Divider />
+          <MetaItem label="Area">{formatArea(property.areaSqft)}</MetaItem>
+          <Divider />
+          <MetaItem label="Type">{formatType(property.type)}</MetaItem>
         </dl>
       </div>
     </article>
   );
 }
 
+function MetaItem({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex items-baseline gap-1.5">
+      {/* The label is for screen readers; sighted users read the row as a
+          sequence, which is what keeps it quiet. */}
+      <dt className="sr-only">{label}</dt>
+      <dd className="text-xs uppercase tracking-[0.12em] text-ink-500">{children}</dd>
+    </div>
+  );
+}
+
+function Divider() {
+  return (
+    <span aria-hidden="true" className="h-3 w-px bg-ink-300" />
+  );
+}
+
 /** Matches the card's exact box so switching to real data shifts nothing. */
 export function PropertyCardSkeleton() {
   return (
-    <div className="overflow-hidden rounded-2xl border border-ink-200 bg-white shadow-card">
-      <div className="aspect-[3/2] bg-ink-200" />
-      <div className="flex flex-col gap-3 p-4 sm:p-5">
-        <div className="skeleton h-7 w-32" />
-        <div className="skeleton h-4 w-full" />
-        <div className="skeleton h-4 w-3/4" />
-        <div className="skeleton h-4 w-2/5" />
-        <div className="grid grid-cols-3 gap-2 border-t border-ink-200 pt-3">
-          <div className="skeleton h-8" />
-          <div className="skeleton h-8" />
-          <div className="skeleton h-8" />
+    <div>
+      <div className="aspect-4/5 rounded-sm bg-ink-200" />
+      <div className="flex flex-col pt-5">
+        <div className="skeleton h-8 w-32" />
+        <div className="skeleton mt-3 h-4 w-full" />
+        <div className="skeleton mt-2 h-4 w-3/4" />
+        <div className="skeleton mt-2 h-4 w-2/5" />
+        <div className="mt-4 border-t border-ink-200 pt-3">
+          <div className="skeleton h-4 w-2/3" />
         </div>
       </div>
     </div>

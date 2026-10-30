@@ -11,7 +11,7 @@
     "analyze": "cross-env ANALYZE=true next build",
     "measure": "node scripts/measure-bundle.mjs",
     "renders": "node scripts/generate-renders.mjs",
-    "test": "tsx --test tests/query.test.ts tests/enquiry.test.ts",
+    "test": "tsx --test tests/query.test.ts tests/enquiry.test.ts tests/format.test.ts",
     "lighthouse": "node scripts/lighthouse.mjs"
   },
   "dependencies": {

@@ -313,8 +313,8 @@ export function HeroCanvas({ poster }: { poster: string }) {
         <div className="pointer-events-none absolute inset-0">
           <div className="mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-14 sm:px-6 sm:pb-20 lg:px-8">
             <div className="max-w-3xl">
-              <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-sand">
-                <span aria-hidden="true" className="h-px w-8 bg-sand/60" />
+              <p className="eyebrow flex items-center gap-3 text-sand">
+                <span aria-hidden="true" className="h-px w-10 bg-sand/60" />
                 {scene.eyebrow}
               </p>
 
@@ -328,8 +328,8 @@ export function HeroCanvas({ poster }: { poster: string }) {
               */}
               <h2
                 aria-live="polite"
-                className="mt-5 font-display text-[2.6rem] leading-[0.95] tracking-[-0.02em] text-white
-                           [text-wrap:balance] sm:text-6xl lg:text-7xl"
+                className="mt-6 font-display text-[2.9rem] leading-[0.98] text-white
+                           [text-wrap:balance] sm:text-7xl lg:text-[5.5rem]"
               >
                 {scene.title}
               </h2>
@@ -420,15 +420,22 @@ function SceneRail({ active }: { active: number }) {
   );
 }
 
+/**
+ * Scroll indicator: a hairline that travels down its track. A bouncing chevron
+ * is the obvious choice and reads as a consumer app; a drawn line is quieter
+ * and matches the hairline language used in the nav and the chapter rail.
+ */
 function ScrollHint({ hidden }: { hidden: boolean }) {
   return (
     <div
       aria-hidden="true"
-      className={`pointer-events-none absolute bottom-6 left-1/2 -translate-x-1/2 text-[11px]
-                  uppercase tracking-[0.2em] text-white/60 transition-opacity duration-500
-                  ${hidden ? 'opacity-0' : 'opacity-100'}`}
+      className={`pointer-events-none absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3
+                  transition-opacity duration-500 ${hidden ? 'opacity-0' : 'opacity-100'}`}
     >
-      Scroll
+      <span className="text-[10px] uppercase tracking-[0.3em] text-white/55">Scroll</span>
+      <span className="relative h-10 w-px overflow-hidden bg-white/20">
+        <span className="absolute inset-x-0 top-0 h-4 animate-[scroll-cue_2s_ease-in-out_infinite] bg-white/80" />
+      </span>
     </div>
   );
 }

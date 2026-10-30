@@ -10,34 +10,53 @@ import Link from 'next/link';
  */
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-ink-200/70 bg-ink-50/85 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 border-b border-ink-200/60 bg-ink-50/80 backdrop-blur-xl">
+      <div className="mx-auto flex h-20 max-w-[90rem] items-center justify-between gap-6 px-5 sm:px-8 lg:px-12">
+        {/*
+          Wordmark set in the display face with wide tracking. Every reference
+          in the set treats the name as a mark rather than as a nav item, and
+          the letterspacing is what does that work.
+        */}
         <Link
           href="/"
-          className="font-display text-xl tracking-tight text-ink-900 sm:text-2xl"
+          className="font-display text-2xl tracking-[0.18em] text-ink-900 sm:text-[1.75rem]"
           aria-label="Skyline — home"
         >
-          Skyline
+          SKYLINE
         </Link>
 
-        <nav aria-label="Primary" className="flex items-center gap-1 sm:gap-2">
+        {/*
+          Small-caps links with a hairline that draws in on hover, instead of
+          pills. Pills read as app chrome; this reads as a masthead.
+        */}
+        <nav aria-label="Primary" className="flex items-center gap-6 sm:gap-9">
           <Link
             href="/properties"
-            className="rounded-full px-3 py-2 text-sm font-medium text-ink-600 transition-colors hover:bg-ink-100 hover:text-ink-900 sm:px-4"
+            className="group hidden text-xs uppercase tracking-[0.18em] text-ink-600 transition-colors hover:text-ink-900 sm:inline-block"
           >
-            Properties
+            Residences
+            <span
+              aria-hidden="true"
+              className="mt-1 block h-px w-0 bg-ink-900 transition-all duration-300 group-hover:w-full"
+            />
           </Link>
           <Link
             href="/properties?sort=price-desc"
-            className="hidden rounded-full px-4 py-2 text-sm font-medium text-ink-600 transition-colors hover:bg-ink-100 hover:text-ink-900 sm:inline-flex"
+            className="group hidden text-xs uppercase tracking-[0.18em] text-ink-600 transition-colors hover:text-ink-900 sm:inline-block"
           >
-            Luxury
+            Penthouses
+            <span
+              aria-hidden="true"
+              className="mt-1 block h-px w-0 bg-ink-900 transition-all duration-300 group-hover:w-full"
+            />
           </Link>
           <Link
             href="/properties"
-            className="rounded-full bg-ink-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-ink-700 sm:px-5"
+            className="inline-flex items-center gap-2 rounded-full border border-ink-900 px-5 py-2.5 text-xs
+                       uppercase tracking-[0.16em] text-ink-900 transition-colors hover:bg-ink-900 hover:text-white"
           >
             Book a visit
+            <span aria-hidden="true">→</span>
           </Link>
         </nav>
       </div>

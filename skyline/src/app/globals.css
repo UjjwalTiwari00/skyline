@@ -35,7 +35,7 @@
   --color-sand: #c9a227;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-display: var(--font-abril), ui-serif, Georgia, serif;
+  --font-display: var(--font-display-family), ui-serif, Georgia, 'Times New Roman', serif;
 
   /* One elevation scale, so cards and panels cannot drift apart. */
   --shadow-card: 0 1px 2px rgb(18 17 16 / 0.04), 0 8px 24px -12px rgb(18 17 16 / 0.18);
@@ -68,13 +68,30 @@
     border-radius: 2px;
   }
 
-  /* Headings use the display face; body text never does. */
+  /*
+   * Headings use the display face; body text never does.
+   *
+   * Weight 300 and a slightly negative tracking: Cormorant is a high-contrast
+   * old-style face, and at display sizes the light weight is what makes it
+   * read as composed rather than as a default serif. Line-height is tightened
+   * here rather than per-component so every headline on the site shares it.
+   */
   h1,
   h2,
   h3 {
     font-family: var(--font-display);
-    font-weight: 400;
-    letter-spacing: -0.01em;
+    font-weight: 300;
+    letter-spacing: -0.015em;
+    line-height: 1.04;
+  }
+
+  /* Small uppercase section labels — the recurring device in the references. */
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
   }
 
   /*
@@ -115,5 +132,86 @@
    */
   .skeleton {
     @apply animate-pulse rounded-lg bg-ink-200;
+  }
+}
+
+/**
+ * Scroll reveals.
+ *
+ * Implemented with CSS scroll-driven animations (`animation-timeline: view()`)
+ * rather than IntersectionObserver or a library. That matters here: /properties
+ * has roughly 5 KB of first-load JS headroom after the framework, and GSAP's
+ * ScrollTrigger alone is ~45 KB. These cost **zero** bytes of JavaScript and
+ * run on the compositor.
+ *
+ * Everything is inside @supports, and the un-revealed state is only ever
+ * applied there. A browser without support (Safari today) shows the content
+ * immediately at full opacity — content is never left hidden by a feature
+ * query that failed, which would be both a design and an accessibility bug.
+ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      /* Starts as the element enters, finishes a third of the way up. */
+      animation-range: entry 10% cover 34%;
+    }
+
+    /* Image panels wipe open instead of sliding — the clip-path reveal. */
+    .reveal-clip {
+      animation: reveal-clip linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 30%;
+    }
+
+    /*
+     * Staggered children. A delay cannot be used with a scroll timeline, so
+     * the stagger comes from each child starting its range slightly later.
+     */
+    .reveal-stagger > * {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 8% cover 32%;
+    }
+    .reveal-stagger > *:nth-child(2) { animation-range: entry 12% cover 38%; }
+    .reveal-stagger > *:nth-child(3) { animation-range: entry 16% cover 44%; }
+    .reveal-stagger > *:nth-child(4) { animation-range: entry 20% cover 50%; }
+    .reveal-stagger > *:nth-child(5) { animation-range: entry 24% cover 56%; }
+    .reveal-stagger > *:nth-child(6) { animation-range: entry 28% cover 62%; }
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    /* Small enough to read as settling, not as a slide. */
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Travelling hairline in the hero's scroll indicator. */
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(-100%);
+  }
+  60%,
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+@keyframes reveal-clip {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
   }
 }

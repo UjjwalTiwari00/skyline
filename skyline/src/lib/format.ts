@@ -13,17 +13,33 @@ const LAKH = 100_000;
  * price appears on 100acress and every other NCR portal.
  */
 export function formatPrice(rupees: number): string {
-  if (rupees >= CRORE) {
+  const lakh = rupees / LAKH;
+
+  /**
+   * Round to the displayed precision BEFORE picking the unit.
+   *
+   * Choosing the unit first produced "₹100 L" for 99,50,000: under a crore,
+   * so it took the lakh branch, then rounded 99.5 up to 100. Nobody quotes a
+   * price as 100 lakh — that is 1 crore. Deciding after rounding means a
+   * value that rounds up to 100 lakh is shown in crore instead.
+   */
+  const roundedLakh = Math.round(lakh * 10) / 10;
+
+  // Only once the lakh figure would round to 100 does it become a crore
+  // figure. 99.5 lakh stays "₹99.5 L" — "₹0.99 Cr" is as unidiomatic as
+  // "₹100 L", and an earlier fix for one produced the other.
+  if (roundedLakh >= 100) {
     const crore = rupees / CRORE;
     // 1.5 Cr, not 1.50 Cr; 2 Cr, not 2.00 Cr.
     const text = crore >= 10 ? crore.toFixed(1) : crore.toFixed(2);
     return `₹${text.replace(/\.?0+$/, '')} Cr`;
   }
-  if (rupees >= LAKH) {
-    const lakh = rupees / LAKH;
-    const text = lakh >= 10 ? lakh.toFixed(0) : lakh.toFixed(1);
-    return `₹${text.replace(/\.0$/, '')} L`;
+
+  // String() drops a trailing .0 on its own: 43 -> "43", 99.5 -> "99.5".
+  if (roundedLakh >= 1) {
+    return `₹${String(roundedLakh)} L`;
   }
+
   return `₹${rupees.toLocaleString('en-IN')}`;
 }
 

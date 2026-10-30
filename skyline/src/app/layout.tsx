@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Abril_Fatface } from 'next/font/google';
+import { Inter, Cormorant_Garamond } from 'next/font/google';
 
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
@@ -17,11 +17,23 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const abril = Abril_Fatface({
+/**
+ * Cormorant Garamond, not Abril Fatface.
+ *
+ * Abril is a heavy slab display face — it reads as editorial magazine, and at
+ * the sizes this hero uses it shouted. Cormorant is a high-contrast old-style
+ * serif that holds up at 6rem and still looks composed, which is the register
+ * every luxury-residence site in the reference set is working in.
+ *
+ * Light and regular only: the headlines want 300, and anything heavier loses
+ * the contrast that makes the face worth having. Still two families in total,
+ * which is the brief's limit.
+ */
+const display = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['300', '400'],
   display: 'swap',
-  variable: '--font-abril',
+  variable: '--font-display-family',
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
@@ -52,7 +64,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={`${inter.variable} ${abril.variable}`}>
+    <html lang="en-IN" className={`${inter.variable} ${display.variable}`}>
       <body className="min-h-dvh antialiased">
         {/* First tab stop on every page — required for keyboard users who
             would otherwise walk the whole nav on each navigation. */}
