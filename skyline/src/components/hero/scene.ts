@@ -16,15 +16,15 @@
  */
 import {
   ACESFilmicToneMapping,
-  AmbientLight,
   BoxGeometry,
   CanvasTexture,
   Color,
-  ConeGeometry,
   CylinderGeometry,
+  DodecahedronGeometry,
   DirectionalLight,
   EquirectangularReflectionMapping,
-  Fog,
+  FogExp2,
+  HemisphereLight,
   InstancedMesh,
   Matrix4,
   Mesh,
@@ -73,6 +73,7 @@ const FLOOR_COUNT = 34;
 const FLOOR_HEIGHT = 1.15;
 const TOWER_W = 7;
 const TOWER_D = 5.2;
+const TOWER_HEIGHT = FLOOR_COUNT * FLOOR_HEIGHT;
 /** Roof spire, measured from the roof slab. */
 const CROWN_HEIGHT = FLOOR_HEIGHT * 4.2;
 
@@ -225,6 +226,103 @@ function makeSky(): CanvasTexture {
 }
 
 /**
+ * A building facade, painted to a canvas.
+ *
+ * This replaces building windows out of geometry. Every reference
+ * implementation of a convincing night/dusk city paints the facade instead —
+ * a grid of window cells with randomised brightness — and uses it as both the
+ * colour map and the emissive map. Geometry windows cost a draw call and a
+ * mesh per band, never line up with the mass, and at distance read as shelves
+ * rather than as glazing, which is exactly how the previous build failed.
+ *
+ * Painted, the whole facade is one material on one box: cheaper, and it has
+ * the fine grain that makes a tower look inhabited.
+ *
+ * Returns both maps: `map` is dark glass with faint window outlines, and
+ * `emissive` is black except where a window is lit, so only lit cells glow.
+ */
+function makeFacade(options: {
+  cols: number;
+  rows: number;
+  litChance: number;
+  seed: number;
+  warm: boolean;
+}): { map: CanvasTexture; emissive: CanvasTexture } {
+  const { cols, rows, litChance, seed, warm } = options;
+  /**
+   * Cell proportions follow the one reference implementation that reads as
+   * a city rather than as static: 128px across, ~18px per row, with the
+   * window occupying 52% x 42% of its cell. The earlier 16px cells with a
+   * 2px inset were nearly all glass — tiled 3x4 over a neighbour, that is
+   * white noise, which is exactly what the previous build looked like.
+   */
+  const W = 128;
+  const cw = W / cols;
+  const ch = 18;
+  const H = rows * ch;
+
+  const base = document.createElement('canvas');
+  base.width = W;
+  base.height = H;
+  const glow = document.createElement('canvas');
+  glow.width = W;
+  glow.height = H;
+
+  const b = base.getContext('2d');
+  const g = glow.getContext('2d');
+
+  let st = seed >>> 0;
+  const random = () => {
+    st = (st * 1103515245 + 12345) & 0x7fffffff;
+    return st / 0x7fffffff;
+  };
+
+  if (b && g) {
+    b.fillStyle = '#0a0d14';
+    b.fillRect(0, 0, W, H);
+    g.fillStyle = '#000000';
+    g.fillRect(0, 0, W, H);
+
+    for (let row = 0; row < rows; row += 1) {
+      for (let col = 0; col < cols; col += 1) {
+        const x = col * cw + cw * 0.24;
+        const y = row * ch + ch * 0.28;
+        const w = cw * 0.52;
+        const h = ch * 0.42;
+
+        if (random() < litChance) {
+          // Lit windows vary in both hue and alpha, so no two read the same.
+          // Alpha is the brightness control: it is what stops a lit facade
+          // from being a wall of identical hot rectangles.
+          const cool = random() > (warm ? 0.82 : 0.55);
+          const fill = cool
+            ? `rgba(168, 198, 255, ${(0.3 + random() * 0.3).toFixed(2)})`
+            : `rgba(255, ${175 + Math.round(random() * 55)}, 118, ${(0.65 + random() * 0.35).toFixed(2)})`;
+          b.fillStyle = fill;
+          b.fillRect(x, y, w, h);
+          g.fillStyle = fill;
+          g.fillRect(x, y, w, h);
+        } else {
+          // Unlit glazing still shows as a faint pane, which is what keeps the
+          // window grid legible on a dark building.
+          b.fillStyle = 'rgba(28, 36, 52, 0.55)';
+          b.fillRect(x, y, w, h);
+        }
+      }
+    }
+  }
+
+  const map = new CanvasTexture(base);
+  const emissive = new CanvasTexture(glow);
+  for (const texture of [map, emissive]) {
+    texture.wrapS = RepeatWrapping;
+    texture.wrapT = RepeatWrapping;
+    texture.colorSpace = SRGBColorSpace;
+  }
+  return { map, emissive };
+}
+
+/**
  * Paving for the podium decks.
  *
  * The decks were untextured, so at the amenity camera distance they filled
@@ -279,7 +377,9 @@ export function createTowerScene(
    * earlier build look like untextured blocks rather than a lit building.
    */
   renderer.toneMapping = ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.15;
+  // Higher than before because the glow now has to come from exposure and
+  // emissive alone — there is no bloom pass to lift it.
+  renderer.toneMappingExposure = 1.4;
 
   const scene = new Scene();
   const environment = makeSky();
@@ -287,9 +387,23 @@ export function createTowerScene(
   scene.environment = environment;
   // Fog tinted to the horizon so the far blocks dissolve into the sky instead
   // of ending on a hard silhouette.
-  scene.fog = new Fog(HORIZON, 55, 190);
+  // Exponential fog, not linear: distance falls off the way haze actually
+  // does, and the far blocks dissolve into the dusk rather than hitting a
+  // hard far plane.
+  scene.fog = new FogExp2(0x3b2f4a, 0.0052);
 
   const camera = new PerspectiveCamera(42, 1, 0.5, 320);
+
+  /**
+   * No post-processing.
+   *
+   * A bloom pass was tried here and removed. The reference implementation
+   * this scene follows gets its glow from `emissiveIntensity` and ACES tone
+   * mapping alone, and in practice bloom did more harm than good: every
+   * emissive surface — pool, gym interior, light strips — bled into a white
+   * blob, and it added three full-screen passes to a scene that has to hold
+   * 60fps on a mid-range phone.
+   */
 
   // --- lighting -----------------------------------------------------------
   // Key light low and warm, placed to agree with the sun painted into the sky;
@@ -313,7 +427,10 @@ export function createTowerScene(
   fill.position.set(-26, 14, -18);
   scene.add(fill);
 
-  scene.add(new AmbientLight(0x56618f, 0.9));
+  // Hemisphere rather than ambient: the sky half is violet dusk, the ground
+  // half near-black, so upward faces and downward faces no longer get the
+  // same flat fill.
+  scene.add(new HemisphereLight(0x6d5c92, 0x15101c, 0.95));
 
   // --- ground -------------------------------------------------------------
   const ground = new Mesh(
@@ -339,61 +456,89 @@ export function createTowerScene(
   slabs.receiveShadow = !reducedMotion;
   tower.add(slabs);
 
-  const glassGeometry = new BoxGeometry(TOWER_W * 0.94, FLOOR_HEIGHT * 0.78, TOWER_D * 0.94);
-  const glassMaterial = new MeshStandardMaterial({
-    // Deep blue-green rather than neutral grey: glazing at dusk picks up the
-    // sky, and the environment map now has a sky to pick up.
-    color: 0x1d2b3a,
-    roughness: 0.08,
-    metalness: 0.96,
+  /**
+   * The shaft: ONE continuous volume, not a box per floor.
+   *
+   * This is the fix for the tower reading as a stack of plates. Per-floor
+   * glass boxes were 0.78 x FLOOR_HEIGHT tall on a 1.0 x FLOOR_HEIGHT pitch,
+   * so there was a real gap at every level and the bright slab edge showed
+   * through it — 34 floating trays rather than a building. A single mass that
+   * grows in Y gives the tower continuous skin, and the floors are then
+   * *expressed* on it by the slab lines and fins below rather than *made* of
+   * them.
+   */
+  const towerFacade = makeFacade({
+    cols: 6,
+    rows: FLOOR_COUNT,
+    litChance: 0.45,
+    seed: 0x9e37,
+    warm: true,
+  });
+  // Wrapped twice horizontally so the long faces get the same window pitch as
+  // the short ones; one texture row per floor vertically.
+  towerFacade.map.repeat.set(2, 1);
+  towerFacade.emissive.repeat.set(2, 1);
+
+  const shaftGeometry = new BoxGeometry(TOWER_W * 0.98, TOWER_HEIGHT, TOWER_D * 0.98);
+  const shaftMaterial = new MeshStandardMaterial({
+    map: towerFacade.map,
+    emissiveMap: towerFacade.emissive,
+    emissive: 0xffffff,
+    /**
+     * Above 1 deliberately: with ACES at exposure 1.4 this is what makes a
+     * lit window read as a light source rather than as a pale rectangle.
+     */
+    emissiveIntensity: 1.8,
+    roughness: 0.4,
+    metalness: 0.5,
     transparent: true,
     opacity: 1,
   });
-  const glass = new InstancedMesh(glassGeometry, glassMaterial, FLOOR_COUNT);
-  glass.castShadow = !reducedMotion;
-  tower.add(glass);
+  const shaft = new Mesh(shaftGeometry, shaftMaterial);
+  shaft.castShadow = !reducedMotion;
+  tower.add(shaft);
 
   /**
-   * Lit windows.
+   * Vertical fins.
    *
-   * One warm band per floor, inset just inside the glazing. MeshBasicMaterial
-   * because these are read as light sources, not lit surfaces — and because
-   * `setColorAt` drives a basic material's output colour directly, which is
-   * how each floor gets its own brightness. An emissive standard material
-   * would have given all 34 floors the same glow, which reads as a strip
-   * light rather than as apartments.
+   * The single most important element for reading a residential tower: the
+   * continuous pilasters that run the full height and give the facade its
+   * grain. Without them a glazed box is just a box, which is what the previous
+   * build was. They are narrow (0.3 units) so they read as pinstripes at
+   * distance, and they break the lit floor bands into bays up close.
    */
-  /**
-   * Slightly WIDER than the glazing, not narrower.
-   *
-   * At 0.9 these sat inside a mirror-finish box and were completely hidden —
-   * the warm stripes never appeared, and what read as colour on the facade was
-   * the glass reflecting the pink sky. Protruding a hair past the glass turns
-   * each floor into a visible band of light.
-   */
-  const bandGeometry = new BoxGeometry(TOWER_W * 0.97, FLOOR_HEIGHT * 0.26, TOWER_D * 0.97);
-  const bandMaterial = new MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 1 });
-  const bands = new InstancedMesh(bandGeometry, bandMaterial, FLOOR_COUNT);
+  const finGeometry = new BoxGeometry(0.3, TOWER_HEIGHT, 0.3);
+  const finMaterial = new MeshStandardMaterial({
+    color: 0xcfc5b6,
+    roughness: 0.55,
+    metalness: 0.15,
+  });
+  /** Fin positions, computed once — they only ever scale in Y. */
+  const FIN_OFFSETS: [number, number][] = [];
   {
-    const warm = new Color();
-    let seed = 19;
-    const random = () => {
-      seed = (seed * 1103515245 + 12345) & 0x7fffffff;
-      return seed / 0x7fffffff;
-    };
-    for (let i = 0; i < FLOOR_COUNT; i += 1) {
-      // Most floors are occupied and warm; a few sit dark, which is what stops
-      // the facade looking like a uniform gradient.
-      const occupied = random() > 0.18;
-      // Capped below 1 so ACES does not roll the brightest floors to white;
-      // the warmth is the point, and clipped highlights read as grey.
-      const brightness = occupied ? 0.42 + random() * 0.38 : 0.05;
-      warm.setRGB(1.0 * brightness, 0.74 * brightness, 0.46 * brightness);
-      bands.setColorAt(i, warm);
+    const perFace = 5;
+    for (let i = 0; i < perFace; i += 1) {
+      const t = i / (perFace - 1);
+      const x = -TOWER_W / 2 + t * TOWER_W;
+      FIN_OFFSETS.push([x, TOWER_D / 2]);
+      FIN_OFFSETS.push([x, -TOWER_D / 2]);
     }
-    if (bands.instanceColor) bands.instanceColor.needsUpdate = true;
+    // Side faces get the positions the corner run missed.
+    FIN_OFFSETS.push([TOWER_W / 2, 0]);
+    FIN_OFFSETS.push([-TOWER_W / 2, 0]);
   }
-  tower.add(bands);
+
+  const fins = new InstancedMesh(finGeometry, finMaterial, FIN_OFFSETS.length);
+  fins.castShadow = !reducedMotion;
+  tower.add(fins);
+
+  /**
+   * The per-floor "lit window" InstancedMesh that used to sit here is gone.
+   * Those bands were geometry wrapped around the shaft, so they protruded as
+   * rings and read as shelves rather than as glazing. The windows now live in
+   * the facade's emissive map, which costs no geometry, no draw call, and
+   * lines up with the mass by construction.
+   */
 
   // Service core, revealed when the facade peels away in scene 3.
   const core = new Mesh(
@@ -458,104 +603,69 @@ export function createTowerScene(
 
   // --- surroundings -------------------------------------------------------
   const neighbourGeometry = new BoxGeometry(1, 1, 1);
-  const neighbourMaterial = new MeshStandardMaterial({
-    color: 0x323b47,
-    roughness: 0.88,
-    metalness: 0.05,
-  });
   const NEIGHBOUR_COUNT = 26;
-  const neighbours = new InstancedMesh(neighbourGeometry, neighbourMaterial, NEIGHBOUR_COUNT);
-  neighbours.castShadow = !reducedMotion;
-  neighbours.receiveShadow = !reducedMotion;
+
+  /**
+   * Three buckets of lit density, each its own facade and InstancedMesh.
+   *
+   * One texture at 30% lit, stretched 3x4 over every building, was the
+   * previous version — and it read as television static. The reference does
+   * two things this now copies: it gives each building ONE window grid per
+   * face regardless of size (so no repeat), and it uses three densities so
+   * that a dusk skyline has dark buildings in it as well as lit ones. Three
+   * draw calls instead of one is the whole cost.
+   */
+  const cityFacades = [0.4, 0.25, 0.12].map((litChance, index) =>
+    makeFacade({ cols: 6, rows: 14, litChance, seed: 0x5bd1 + index * 977, warm: false }),
+  );
+  const neighbourMaterials = cityFacades.map(
+    (facade) =>
+      new MeshStandardMaterial({
+        map: facade.map,
+        emissiveMap: facade.emissive,
+        emissive: 0xffffff,
+        // Dimmer than the hero tower: the subject of the shot has to be the
+        // brightest thing in it.
+        emissiveIntensity: 1.3,
+        roughness: 0.92,
+        metalness: 0,
+      }),
+  );
+  const perBucket = Math.ceil(NEIGHBOUR_COUNT / cityFacades.length);
+  const neighbourMeshes = neighbourMaterials.map((material) => {
+    const mesh = new InstancedMesh(neighbourGeometry, material, perBucket);
+    mesh.castShadow = !reducedMotion;
+    mesh.receiveShadow = !reducedMotion;
+    mesh.count = 0;
+    scene.add(mesh);
+    return mesh;
+  });
   {
     // Deterministic placement — a random skyline that reshuffles on reload
     // would make the scene feel unstable between visits.
-    const matrix = new Matrix4();
-    const position = new Vector3();
-    const quaternion = new Quaternion();
-    const scale = new Vector3();
-    let seed = 7;
-    const random = () => {
-      seed = (seed * 1103515245 + 12345) & 0x7fffffff;
-      return seed / 0x7fffffff;
-    };
-    for (let i = 0; i < NEIGHBOUR_COUNT; i += 1) {
-      const angle = random() * Math.PI * 2;
-      /**
-       * Pushed out and kept low. At a radius of 18 and heights up to 22 the
-       * neighbours crowded the base and the hero tower was just one block
-       * among many — the Arrival frame had no subject. The tower reaches 43,
-       * so capping these at ~21 keeps it unambiguously the tallest thing.
-       */
-      const radius = 34 + random() * 54;
-      const height = 5 + random() * 16;
-      position.set(Math.cos(angle) * radius, height / 2, Math.sin(angle) * radius);
-      scale.set(4 + random() * 7, height, 4 + random() * 7);
-      matrix.compose(position, quaternion, scale);
-      neighbours.setMatrixAt(i, matrix);
-    }
-    neighbours.instanceMatrix.needsUpdate = true;
-  }
-  scene.add(neighbours);
-
-  /**
-   * Lit windows on the surrounding city.
-   *
-   * Without these the neighbours are unlit silhouettes, so the only inhabited
-   * building at dusk is ours and the skyline reads as cardboard scenery. One
-   * instanced band per neighbour, inset slightly, costs a single draw call.
-   */
-  const cityBandGeometry = new BoxGeometry(1, 1, 1);
-  {
     const m = new Matrix4();
     const p = new Vector3();
     const q = new Quaternion();
-    const s = new Vector3();
-    const colour = new Color();
-
-    const BANDS_PER = 4;
-    const total = NEIGHBOUR_COUNT * BANDS_PER;
-    const cityBands = new InstancedMesh(
-      cityBandGeometry,
-      new MeshBasicMaterial({ color: 0xffffff }),
-      total,
-    );
-
-    // Same seed sequence as the neighbours above, so the bands land on the
-    // buildings rather than near them.
+    const sc = new Vector3();
     let seed = 7;
     const random = () => {
       seed = (seed * 1103515245 + 12345) & 0x7fffffff;
       return seed / 0x7fffffff;
     };
-
-    let index = 0;
     for (let i = 0; i < NEIGHBOUR_COUNT; i += 1) {
       const angle = random() * Math.PI * 2;
+      // Pushed out and kept low so the tower (height ~43) is unambiguously
+      // the tallest thing in frame.
       const radius = 34 + random() * 54;
       const height = 5 + random() * 16;
-      const sx = 4 + random() * 7;
-      const sz = 4 + random() * 7;
-      const cx = Math.cos(angle) * radius;
-      const cz = Math.sin(angle) * radius;
-
-      for (let b = 0; b < BANDS_PER; b += 1) {
-        const t = (b + 1) / (BANDS_PER + 1);
-        p.set(cx, height * t, cz);
-        s.set(sx * 1.01, height * 0.055, sz * 1.01);
-        m.compose(p, q, s);
-        cityBands.setMatrixAt(index, m);
-
-        const lit = random() > 0.3;
-        const brightness = lit ? 0.18 + random() * 0.22 : 0.03;
-        colour.setRGB(brightness, brightness * 0.76, brightness * 0.5);
-        cityBands.setColorAt(index, colour);
-        index += 1;
-      }
+      p.set(Math.cos(angle) * radius, height / 2, Math.sin(angle) * radius);
+      sc.set(4 + random() * 7, height, 4 + random() * 7);
+      m.compose(p, q, sc);
+      const mesh = neighbourMeshes[i % neighbourMeshes.length]!;
+      mesh.setMatrixAt(mesh.count, m);
+      mesh.count += 1;
     }
-    cityBands.instanceMatrix.needsUpdate = true;
-    if (cityBands.instanceColor) cityBands.instanceColor.needsUpdate = true;
-    scene.add(cityBands);
+    for (const mesh of neighbourMeshes) mesh.instanceMatrix.needsUpdate = true;
   }
 
   /**
@@ -601,7 +711,7 @@ export function createTowerScene(
    * material because these are light sources; the brass is a real metal so it
    * picks up the dusk sky.
    */
-  const revealMaterial = new MeshBasicMaterial({ color: 0xffb870 });
+  const revealMaterial = new MeshBasicMaterial({ color: 0xd9955a });
   const brass = new MeshStandardMaterial({ color: 0xc9a227, roughness: 0.28, metalness: 0.95 });
 
   for (const [w, d, x, z, y] of [
@@ -623,8 +733,10 @@ export function createTowerScene(
     new BoxGeometry(15, 0.3, 7),
     new MeshStandardMaterial({
       color: 0x15617a,
-      roughness: 0.03,
-      metalness: 0.85,
+      // Not a mirror. At 0.03 the sun reflected as a single hot spot that
+      // read as a spotlight on the water; 0.14 spreads it into a sheen.
+      roughness: 0.14,
+      metalness: 0.8,
     }),
   );
   pool.position.set(-10, 1.84, 7);
@@ -635,10 +747,6 @@ export function createTowerScene(
   poolRim.position.set(-10, 1.8, 7);
   poolRim.receiveShadow = !reducedMotion;
   scene.add(poolRim);
-
-  const poolLight = new PointLight(0x7fd4ff, 14, 22, 2);
-  poolLight.position.set(-10, 2.6, 7);
-  scene.add(poolLight);
 
   // Loungers along the water, so the deck reads as occupied.
   {
@@ -674,13 +782,6 @@ export function createTowerScene(
    */
   const GYM = { x: 9.5, z: 3, w: 11, d: 8, h: 3.8, base: 1.8 };
 
-  const gymFloor = new Mesh(
-    new BoxGeometry(GYM.w, 0.12, GYM.d),
-    new MeshBasicMaterial({ color: 0xffd9a8 }),
-  );
-  gymFloor.position.set(GYM.x, GYM.base + 0.06, GYM.z);
-  scene.add(gymFloor);
-
   {
     const m = new Matrix4();
     const p = new Vector3();
@@ -715,10 +816,15 @@ export function createTowerScene(
     new BoxGeometry(GYM.w, GYM.h, GYM.d),
     new MeshStandardMaterial({
       color: 0x2b3b4a,
-      roughness: 0.06,
-      metalness: 0.92,
+      // The pavilion glows from its own glass. The previous version lit it
+      // with a MeshBasic floor slab plus a point light, which read as a white
+      // plane with a blob under it once anything bright was in the scene.
+      emissive: 0xffc98a,
+      emissiveIntensity: 0.4,
+      roughness: 0.2,
+      metalness: 0.5,
       transparent: true,
-      opacity: 0.4,
+      opacity: 0.6,
     }),
   );
   gymGlass.position.set(GYM.x, GYM.base + GYM.h / 2, GYM.z);
@@ -735,10 +841,6 @@ export function createTowerScene(
   const gymTrim = new Mesh(new BoxGeometry(GYM.w + 1.4, 0.1, GYM.d + 1.4), brass);
   gymTrim.position.set(GYM.x, GYM.base + GYM.h + 0.02, GYM.z);
   scene.add(gymTrim);
-
-  const gymLight = new PointLight(0xffc98a, 22, 26, 2);
-  gymLight.position.set(GYM.x, GYM.base + GYM.h * 0.6, GYM.z);
-  scene.add(gymLight);
 
   // Garden — the reference calls its courtyard an English garden, so this is
   // lawn with real planting on it rather than a flat green rectangle.
@@ -765,14 +867,16 @@ export function createTowerScene(
    * a visible trunk is what separates "planting" from "green cube".
    */
   const trunkGeometry = new CylinderGeometry(0.12, 0.16, 1.5, 5);
-  const canopyGeometry = new ConeGeometry(1.1, 2.6, 7);
+  // Rounded and flat-shaded. Cones read as Christmas trees; a squashed
+  // dodecahedron reads as a canopy.
+  const canopyGeometry = new DodecahedronGeometry(1.15, 0);
   {
     const m = new Matrix4();
     const p = new Vector3();
     const q = new Quaternion();
     const s = new Vector3();
 
-    const TREES = 22;
+    const TREES = 14;
     const trunks = new InstancedMesh(
       trunkGeometry,
       new MeshStandardMaterial({ color: 0x4a3a2c, roughness: 0.95 }),
@@ -780,10 +884,12 @@ export function createTowerScene(
     );
     const canopies = new InstancedMesh(
       canopyGeometry,
-      new MeshStandardMaterial({ color: 0x2f5a35, roughness: 0.98 }),
+      new MeshStandardMaterial({ color: 0xffffff, roughness: 0.98, flatShading: true }),
       TREES,
     );
     canopies.castShadow = !reducedMotion;
+    const greenA = new Color(0x2c4a31);
+    const greenB = new Color(0x3d5c38);
 
     let seed = 41;
     const random = () => {
@@ -793,7 +899,7 @@ export function createTowerScene(
 
     for (let i = 0; i < TREES; i += 1) {
       // Ring the deck and fill the garden, keeping clear of the pool and gym.
-      const inGarden = i < 12;
+      const inGarden = i < 8;
       const x = inGarden ? -12 + random() * 20 : -24 + random() * 48;
       const z = inGarden ? 10 + random() * 8 : -6 + random() * 6;
       const scaleFactor = 0.8 + random() * 0.6;
@@ -803,12 +909,20 @@ export function createTowerScene(
       m.compose(p, q, s);
       trunks.setMatrixAt(i, m);
 
-      p.set(x, 2.05 + (1.5 + 1.3) * scaleFactor, z);
+      p.set(x, 2.05 + (1.5 + 0.95) * scaleFactor, z);
+      // Wider than tall, and never the same twice.
+      s.set(
+        scaleFactor * (1 + random() * 0.35),
+        scaleFactor * (0.8 + random() * 0.2),
+        scaleFactor * (1 + random() * 0.35),
+      );
       m.compose(p, q, s);
       canopies.setMatrixAt(i, m);
+      canopies.setColorAt(i, random() > 0.5 ? greenA : greenB);
     }
     trunks.instanceMatrix.needsUpdate = true;
     canopies.instanceMatrix.needsUpdate = true;
+    if (canopies.instanceColor) canopies.instanceColor.needsUpdate = true;
     scene.add(trunks);
     scene.add(canopies);
   }
@@ -881,27 +995,36 @@ export function createTowerScene(
       matrix.compose(position, quaternion, scale);
       slabs.setMatrixAt(i, matrix);
 
-      // Glass lags the slab by a fraction so the structure reads first.
-      const glassEased = smoothstep(clamp01(local * 1.4 - 0.4));
-      position.set(0, y, 0);
-      scale.set(glassEased, glassEased === 0 ? 0.0001 : glassEased, glassEased);
-      matrix.compose(position, quaternion, scale);
-      glass.setMatrixAt(i, matrix);
-
-      // Windows light up last, so a floor reads as built, then glazed, then
-      // occupied — which is the order the copy describes.
-      const litEased = smoothstep(clamp01(local * 2 - 1));
-      position.set(0, y, 0);
-      scale.set(litEased, litEased === 0 ? 0.0001 : litEased, litEased);
-      matrix.compose(position, quaternion, scale);
-      bands.setMatrixAt(i, matrix);
     }
     slabs.instanceMatrix.needsUpdate = true;
-    glass.instanceMatrix.needsUpdate = true;
-    bands.instanceMatrix.needsUpdate = true;
+
+    /**
+     * The shaft and the fins are continuous, so they grow rather than appear
+     * floor by floor: scaled in Y with the base pinned to the ground. The
+     * slab edges above still arrive one at a time, which is what reads as
+     * assembly — the mass rising behind them is what stops it looking like a
+     * stack of loose trays.
+     */
+    const grown = Math.max(0.0001, build);
+    shaft.scale.y = grown;
+    shaft.position.y = (TOWER_HEIGHT * grown) / 2;
+
+    // The facade texture has to scale with the mass or the window grid
+    // stretches as the tower rises.
+    towerFacade.map.repeat.set(2, grown);
+    towerFacade.emissive.repeat.set(2, grown);
+
+    for (let i = 0; i < FIN_OFFSETS.length; i += 1) {
+      const offset = FIN_OFFSETS[i]!;
+      position.set(offset[0], (TOWER_HEIGHT * grown) / 2, offset[1]);
+      scale.set(1, grown, 1);
+      matrix.compose(position, quaternion, scale);
+      fins.setMatrixAt(i, matrix);
+    }
+    fins.instanceMatrix.needsUpdate = true;
 
     core.scale.y = clamp01(build * 1.1);
-    core.position.y = (core.scale.y * FLOOR_COUNT * FLOOR_HEIGHT) / 2;
+    core.position.y = (core.scale.y * TOWER_HEIGHT) / 2;
 
     /**
      * The crown grows upward from the roof slab once the shaft is topped out.
@@ -923,13 +1046,11 @@ export function createTowerScene(
     const leaving = phase(progress, 0.62, 0.68);
     const openness = inside * (1 - leaving);
 
-    glassMaterial.opacity = 1 - openness * 0.93;
-    glassMaterial.depthWrite = glassMaterial.opacity > 0.65;
-
-    // The window bands have to fade with the glazing. Left opaque, they stayed
-    // as solid glowing slabs hanging in the opened-up floor.
-    bandMaterial.opacity = 1 - openness;
-    bands.visible = bandMaterial.opacity > 0.02;
+    shaftMaterial.opacity = 1 - openness * 0.92;
+    shaftMaterial.depthWrite = shaftMaterial.opacity > 0.65;
+    // The lit windows live in the facade's emissive map, so they fade with
+    // the skin automatically — no separate band mesh to keep in step.
+    shaftMaterial.emissiveIntensity = 1.8 * (1 - openness);
 
     wallMaterial.opacity = openness;
     planGroup.visible = openness > 0.01;
@@ -1089,10 +1210,15 @@ export function createTowerScene(
         else if (material) material.dispose();
       });
       slabGeometry.dispose();
-      glassGeometry.dispose();
-      bandGeometry.dispose();
+      shaftGeometry.dispose();
+      finGeometry.dispose();
+      towerFacade.map.dispose();
+      towerFacade.emissive.dispose();
       neighbourGeometry.dispose();
-      cityBandGeometry.dispose();
+      for (const facade of cityFacades) {
+        facade.map.dispose();
+        facade.emissive.dispose();
+      }
       trunkGeometry.dispose();
       canopyGeometry.dispose();
       environment.dispose();
