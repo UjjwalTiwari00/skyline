@@ -1,0 +1,3540 @@
+[
+  {
+    "id": "p-001",
+    "slug": "1-bhk-independent-floor-quayside-heights-golf-course-extension-road-1",
+    "title": "1 BHK Independent Floor in Quayside Heights, Golf Course Extension Road",
+    "description": "1 BHK Independent Floor of 658 sq ft at Quayside Heights, Golf Course Extension Road, Gurugram. Newly launched, developed by Thirdwave Developers. The home opens onto a bright living room with 3 balconies overlooking the central green.",
+    "locality": "Golf Course Extension Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.4122,
+    "lng": 77.05955,
+    "priceInr": 9950000,
+    "areaSqft": 658,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 2,
+    "type": "independent-floor",
+    "furnished": true,
+    "builder": "Thirdwave Developers",
+    "status": "new-launch",
+    "possessionDate": "2027-10-01",
+    "reraNo": "RC/REP/HARERA/GGM/696/315/2024/61",
+    "amenities": [
+      "Basketball Court",
+      "24x7 Security",
+      "Multipurpose Hall",
+      "Landscaped Garden",
+      "Kids Play Area",
+      "CCTV Surveillance",
+      "Covered Parking",
+      "Rainwater Harvesting",
+      "Intercom Facility",
+      "Library",
+      "Swimming Pool"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Quayside Heights — view 1"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Quayside Heights — view 2"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Quayside Heights — view 3"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Quayside Heights — view 4"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Quayside Heights — view 5"
+      }
+    ],
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "p-002",
+    "slug": "2-bhk-independent-floor-astoria-towers-golf-course-road-2",
+    "title": "2 BHK Independent Floor in Astoria Towers, Golf Course Road",
+    "description": "2 BHK Independent Floor of 1,412 sq ft at Astoria Towers, Golf Course Road, Gurugram. Ready to move in, developed by Anvaya Realty. The home opens onto a bright living room with 2 balconies overlooking the central green.",
+    "locality": "Golf Course Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.4649,
+    "lng": 77.06664,
+    "priceInr": 29050000,
+    "areaSqft": 1412,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 3,
+    "type": "independent-floor",
+    "furnished": true,
+    "builder": "Anvaya Realty",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/604/385/2024/86",
+    "amenities": [
+      "Basketball Court",
+      "Yoga Deck",
+      "Sewage Treatment Plant",
+      "Clubhouse",
+      "Indoor Games Room",
+      "Cafeteria",
+      "Swimming Pool",
+      "Rainwater Harvesting",
+      "Amphitheatre",
+      "CCTV Surveillance"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Astoria Towers — view 1"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Astoria Towers — view 2"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Astoria Towers — view 3"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Astoria Towers — view 4"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Astoria Towers — view 5"
+      }
+    ],
+    "createdAt": "2026-09-22T00:00:00.000Z"
+  },
+  {
+    "id": "p-003",
+    "slug": "studio-apartment-rivendell-park-mg-road-3",
+    "title": "Studio Apartment in Rivendell Park, MG Road",
+    "description": "Studio Apartment of 519 sq ft at Rivendell Park, MG Road, Gurugram. Ready to move in, developed by Thirdwave Developers. The home opens onto a bright living room with 1 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.48896,
+    "lng": 77.07332,
+    "priceInr": 11350000,
+    "areaSqft": 519,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 1,
+    "type": "studio",
+    "furnished": true,
+    "builder": "Thirdwave Developers",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/776/391/2024/43",
+    "amenities": [
+      "Power Backup",
+      "Intercom Facility",
+      "Kids Play Area",
+      "24x7 Security",
+      "Clubhouse",
+      "Sewage Treatment Plant",
+      "Yoga Deck",
+      "Landscaped Garden",
+      "Indoor Games Room",
+      "Swimming Pool",
+      "Amphitheatre",
+      "Multipurpose Hall"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Rivendell Park — view 1"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Rivendell Park — view 2"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Rivendell Park — view 3"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Rivendell Park — view 4"
+      }
+    ],
+    "createdAt": "2026-09-07T00:00:00.000Z"
+  },
+  {
+    "id": "p-004",
+    "slug": "2-bhk-apartment-aurum-towers-vasant-kunj-4",
+    "title": "2 BHK Apartment in Aurum Towers, Vasant Kunj",
+    "description": "2 BHK Apartment of 1,358 sq ft at Aurum Towers, Vasant Kunj, New Delhi. Newly launched, developed by Kalpavriksh Developers. The home opens onto a bright living room with 3 balconies overlooking the central green.",
+    "locality": "Vasant Kunj",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.51561,
+    "lng": 77.16101,
+    "priceInr": 42050000,
+    "areaSqft": 1358,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Kalpavriksh Developers",
+    "status": "new-launch",
+    "possessionDate": "2027-07-01",
+    "reraNo": "RC/REP/HARERA/GGM/873/221/2024/18",
+    "amenities": [
+      "Multipurpose Hall",
+      "Tennis Court",
+      "Jogging Track",
+      "Intercom Facility",
+      "Library",
+      "Rainwater Harvesting"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Towers — view 1"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Towers — view 2"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Towers — view 3"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Towers — view 4"
+      }
+    ],
+    "createdAt": "2026-08-29T00:00:00.000Z"
+  },
+  {
+    "id": "p-005",
+    "slug": "residential-plot-tessera-enclave-sector-128-noida-expressway-5",
+    "title": "Residential Plot in Tessera Enclave, Sector 128, Noida Expressway",
+    "description": "Residential Plot of 3,181 sq ft at Tessera Enclave, Sector 128, Noida Expressway, Noida. Newly launched, developed by Suryam Build. A 3,181 sq ft freehold plot on a 16 m sector road.",
+    "locality": "Sector 128, Noida Expressway",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "lat": 28.51054,
+    "lng": 77.35772,
+    "priceInr": 26200000,
+    "areaSqft": 3181,
+    "bhk": null,
+    "bathrooms": 0,
+    "balconies": 0,
+    "type": "plot",
+    "furnished": true,
+    "builder": "Suryam Build",
+    "status": "new-launch",
+    "possessionDate": "2027-03-01",
+    "reraNo": "RC/REP/HARERA/GGM/819/366/2024/35",
+    "amenities": [
+      "Rainwater Harvesting",
+      "Covered Parking",
+      "Basketball Court",
+      "Indoor Games Room",
+      "Library",
+      "Clubhouse",
+      "Cafeteria",
+      "Banquet Hall",
+      "Landscaped Garden",
+      "24x7 Security",
+      "Tennis Court",
+      "Amphitheatre"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Tessera Enclave — view 1"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Tessera Enclave — view 2"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Tessera Enclave — view 3"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Tessera Enclave — view 4"
+      }
+    ],
+    "createdAt": "2026-08-22T00:00:00.000Z"
+  },
+  {
+    "id": "p-006",
+    "slug": "2-bhk-independent-floor-verdant-greens-golf-course-extension-road-6",
+    "title": "2 BHK Independent Floor in Verdant Greens, Golf Course Extension Road",
+    "description": "2 BHK Independent Floor of 1,025 sq ft at Verdant Greens, Golf Course Extension Road, Gurugram. Under construction, developed by Meridian Realty. The home opens onto a bright living room with 3 balconies overlooking the central green.",
+    "locality": "Golf Course Extension Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41791,
+    "lng": 77.0651,
+    "priceInr": 17300000,
+    "areaSqft": 1025,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 2,
+    "type": "independent-floor",
+    "furnished": false,
+    "builder": "Meridian Realty",
+    "status": "under-construction",
+    "possessionDate": "2029-02-01",
+    "reraNo": "RC/REP/HARERA/GGM/862/270/2024/65",
+    "amenities": [
+      "Multipurpose Hall",
+      "Yoga Deck",
+      "CCTV Surveillance",
+      "Landscaped Garden",
+      "Basketball Court",
+      "Sewage Treatment Plant",
+      "Gymnasium",
+      "Tennis Court",
+      "Banquet Hall"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Verdant Greens — view 1"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Verdant Greens — view 2"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Verdant Greens — view 3"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Verdant Greens — view 4"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Verdant Greens — view 5"
+      }
+    ],
+    "createdAt": "2026-08-02T00:00:00.000Z"
+  },
+  {
+    "id": "p-007",
+    "slug": "2-bhk-apartment-rivendell-enclave-golf-course-extension-road-7",
+    "title": "2 BHK Apartment in Rivendell Enclave, Golf Course Extension Road",
+    "description": "2 BHK Apartment of 1,162 sq ft at Rivendell Enclave, Golf Course Extension Road, Gurugram. Newly launched, developed by Vaayu Habitats. The home opens onto a bright living room with 2 balconies overlooking the central green.",
+    "locality": "Golf Course Extension Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41549,
+    "lng": 77.05433,
+    "priceInr": 17500000,
+    "areaSqft": 1162,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Vaayu Habitats",
+    "status": "new-launch",
+    "possessionDate": "2027-06-01",
+    "reraNo": "RC/REP/HARERA/GGM/680/296/2024/68",
+    "amenities": [
+      "Senior Citizen Corner",
+      "Library",
+      "Cafeteria",
+      "Clubhouse",
+      "Amphitheatre",
+      "Kids Play Area",
+      "Landscaped Garden",
+      "Spa & Sauna",
+      "Sewage Treatment Plant",
+      "Yoga Deck",
+      "Covered Parking"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Rivendell Enclave — view 1"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Rivendell Enclave — view 2"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Rivendell Enclave — view 3"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Rivendell Enclave — view 4"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Rivendell Enclave — view 5"
+      }
+    ],
+    "createdAt": "2026-08-14T00:00:00.000Z"
+  },
+  {
+    "id": "p-008",
+    "slug": "studio-apartment-highgrove-residences-sushant-lok-phase-1-8",
+    "title": "Studio Apartment in Highgrove Residences, Sushant Lok Phase 1",
+    "description": "Studio Apartment of 624 sq ft at Highgrove Residences, Sushant Lok Phase 1, Gurugram. Newly launched, developed by Norhaven Projects. The home opens onto a bright living room with 2 balconies overlooking the central green.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.46804,
+    "lng": 77.07945,
+    "priceInr": 12150000,
+    "areaSqft": 624,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 3,
+    "type": "studio",
+    "furnished": false,
+    "builder": "Norhaven Projects",
+    "status": "new-launch",
+    "possessionDate": "2027-05-01",
+    "reraNo": "RC/REP/HARERA/GGM/511/380/2024/34",
+    "amenities": [
+      "24x7 Security",
+      "Covered Parking",
+      "Sewage Treatment Plant",
+      "Yoga Deck",
+      "Gymnasium",
+      "CCTV Surveillance",
+      "Tennis Court",
+      "Cafeteria",
+      "Library",
+      "Landscaped Garden",
+      "Clubhouse"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Highgrove Residences — view 1"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Highgrove Residences — view 2"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Highgrove Residences — view 3"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Highgrove Residences — view 4"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Highgrove Residences — view 5"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Highgrove Residences — view 6"
+      }
+    ],
+    "createdAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "id": "p-009",
+    "slug": "4-bhk-apartment-highgrove-heights-sohna-road-9",
+    "title": "4 BHK Apartment in Highgrove Heights, Sohna Road",
+    "description": "4 BHK Apartment of 2,384 sq ft at Highgrove Heights, Sohna Road, Gurugram. Newly launched, developed by Norhaven Projects. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Sohna Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.40188,
+    "lng": 77.04473,
+    "priceInr": 20700000,
+    "areaSqft": 2384,
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Norhaven Projects",
+    "status": "new-launch",
+    "possessionDate": "2028-12-01",
+    "reraNo": "RC/REP/HARERA/GGM/851/319/2024/66",
+    "amenities": [
+      "Tennis Court",
+      "Spa & Sauna",
+      "Rainwater Harvesting",
+      "Banquet Hall",
+      "Yoga Deck",
+      "Swimming Pool",
+      "CCTV Surveillance",
+      "Covered Parking",
+      "Indoor Games Room",
+      "Sewage Treatment Plant",
+      "Amphitheatre",
+      "Intercom Facility"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Heights — view 1"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Heights — view 2"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Heights — view 3"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Heights — view 4"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Heights — view 5"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Heights — view 6"
+      }
+    ],
+    "createdAt": "2026-08-06T00:00:00.000Z"
+  },
+  {
+    "id": "p-010",
+    "slug": "4-bhk-apartment-verdant-enclave-dwarka-expressway-10",
+    "title": "4 BHK Apartment in Verdant Enclave, Dwarka Expressway",
+    "description": "4 BHK Apartment of 2,314 sq ft at Verdant Enclave, Dwarka Expressway, Gurugram. Under construction, developed by Vaayu Habitats. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "Dwarka Expressway",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.49865,
+    "lng": 77.01857,
+    "priceInr": 32700000,
+    "areaSqft": 2314,
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Vaayu Habitats",
+    "status": "under-construction",
+    "possessionDate": "2027-01-01",
+    "reraNo": "RC/REP/HARERA/GGM/806/354/2024/40",
+    "amenities": [
+      "Spa & Sauna",
+      "Kids Play Area",
+      "Banquet Hall",
+      "Sewage Treatment Plant",
+      "Rainwater Harvesting",
+      "24x7 Security",
+      "Multipurpose Hall",
+      "Senior Citizen Corner"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Verdant Enclave — view 1"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Verdant Enclave — view 2"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Verdant Enclave — view 3"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Verdant Enclave — view 4"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Verdant Enclave — view 5"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Verdant Enclave — view 6"
+      }
+    ],
+    "createdAt": "2026-08-17T00:00:00.000Z"
+  },
+  {
+    "id": "p-011",
+    "slug": "4-bhk-independent-floor-solaris-residences-sushant-lok-phase-1-11",
+    "title": "4 BHK Independent Floor in Solaris Residences, Sushant Lok Phase 1",
+    "description": "4 BHK Independent Floor of 3,221 sq ft at Solaris Residences, Sushant Lok Phase 1, Gurugram. Ready to move in, developed by Trevon Group. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.46357,
+    "lng": 77.08255,
+    "priceInr": 43100000,
+    "areaSqft": 3221,
+    "bhk": 4,
+    "bathrooms": 3,
+    "balconies": 2,
+    "type": "independent-floor",
+    "furnished": false,
+    "builder": "Trevon Group",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/739/165/2024/79",
+    "amenities": [
+      "Intercom Facility",
+      "CCTV Surveillance",
+      "Spa & Sauna",
+      "Kids Play Area",
+      "24x7 Security",
+      "Cafeteria"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Independent Floor at Solaris Residences — view 1"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Independent Floor at Solaris Residences — view 2"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Independent Floor at Solaris Residences — view 3"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Independent Floor at Solaris Residences — view 4"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Independent Floor at Solaris Residences — view 5"
+      }
+    ],
+    "createdAt": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "id": "p-012",
+    "slug": "3-bhk-apartment-astoria-manor-vasant-kunj-12",
+    "title": "3 BHK Apartment in Astoria Manor, Vasant Kunj",
+    "description": "3 BHK Apartment of 1,490 sq ft at Astoria Manor, Vasant Kunj, New Delhi. Newly launched, developed by Norhaven Projects. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "Vasant Kunj",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.5191,
+    "lng": 77.14916,
+    "priceInr": 43650000,
+    "areaSqft": 1490,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Norhaven Projects",
+    "status": "new-launch",
+    "possessionDate": "2028-12-01",
+    "reraNo": "RC/REP/HARERA/GGM/616/314/2024/69",
+    "amenities": [
+      "Clubhouse",
+      "Swimming Pool",
+      "Senior Citizen Corner",
+      "Library",
+      "Rainwater Harvesting",
+      "Indoor Games Room",
+      "Spa & Sauna",
+      "Power Backup",
+      "Gymnasium",
+      "Multipurpose Hall",
+      "Kids Play Area"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Astoria Manor — view 1"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Astoria Manor — view 2"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Astoria Manor — view 3"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Astoria Manor — view 4"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Astoria Manor — view 5"
+      }
+    ],
+    "createdAt": "2026-07-05T00:00:00.000Z"
+  },
+  {
+    "id": "p-013",
+    "slug": "4-bhk-apartment-oakhaven-heights-mg-road-13",
+    "title": "4 BHK Apartment in Oakhaven Heights, MG Road",
+    "description": "4 BHK Apartment of 2,358 sq ft at Oakhaven Heights, MG Road, Gurugram. Ready to move in, developed by Thirdwave Developers. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47734,
+    "lng": 77.08817,
+    "priceInr": 44850000,
+    "areaSqft": 2358,
+    "bhk": 4,
+    "bathrooms": 3,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Thirdwave Developers",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/819/205/2024/25",
+    "amenities": [
+      "24x7 Security",
+      "Swimming Pool",
+      "CCTV Surveillance",
+      "Yoga Deck",
+      "Gymnasium",
+      "Kids Play Area"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Oakhaven Heights — view 1"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Oakhaven Heights — view 2"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Oakhaven Heights — view 3"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Oakhaven Heights — view 4"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Oakhaven Heights — view 5"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Oakhaven Heights — view 6"
+      }
+    ],
+    "createdAt": "2026-08-02T00:00:00.000Z"
+  },
+  {
+    "id": "p-014",
+    "slug": "3-bhk-apartment-zenith-manor-sushant-lok-phase-1-14",
+    "title": "3 BHK Apartment in Zenith Manor, Sushant Lok Phase 1",
+    "description": "3 BHK Apartment of 1,980 sq ft at Zenith Manor, Sushant Lok Phase 1, Gurugram. Ready to move in, developed by Stonecrest Infra. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47406,
+    "lng": 77.0702,
+    "priceInr": 26600000,
+    "areaSqft": 1980,
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Stonecrest Infra",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/660/113/2024/17",
+    "amenities": [
+      "Cafeteria",
+      "Spa & Sauna",
+      "Jogging Track",
+      "Rainwater Harvesting",
+      "Multipurpose Hall",
+      "Basketball Court"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Zenith Manor — view 1"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Zenith Manor — view 2"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Zenith Manor — view 3"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Zenith Manor — view 4"
+      }
+    ],
+    "createdAt": "2026-05-11T00:00:00.000Z"
+  },
+  {
+    "id": "p-015",
+    "slug": "3-bhk-apartment-skyline-heights-vasant-kunj-15",
+    "title": "3 BHK Apartment in Skyline Heights, Vasant Kunj",
+    "description": "3 BHK Apartment of 1,904 sq ft at Skyline Heights, Vasant Kunj, New Delhi. Newly launched, developed by Vaayu Habitats. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "Vasant Kunj",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.51255,
+    "lng": 77.16787,
+    "priceInr": 49100000,
+    "areaSqft": 1904,
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Vaayu Habitats",
+    "status": "new-launch",
+    "possessionDate": "2029-07-01",
+    "reraNo": "RC/REP/HARERA/GGM/743/302/2024/31",
+    "amenities": [
+      "Amphitheatre",
+      "Yoga Deck",
+      "Indoor Games Room",
+      "Kids Play Area",
+      "Jogging Track",
+      "Clubhouse",
+      "Cafeteria",
+      "Library",
+      "Swimming Pool",
+      "Rainwater Harvesting"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Skyline Heights — view 1"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Skyline Heights — view 2"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Skyline Heights — view 3"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Skyline Heights — view 4"
+      }
+    ],
+    "createdAt": "2026-07-09T00:00:00.000Z"
+  },
+  {
+    "id": "p-016",
+    "slug": "residential-plot-meadowbrook-greens-sushant-lok-phase-1-16",
+    "title": "Residential Plot in Meadowbrook Greens, Sushant Lok Phase 1",
+    "description": "Residential Plot of 3,863 sq ft at Meadowbrook Greens, Sushant Lok Phase 1, Gurugram. Ready to move in, developed by Kalpavriksh Developers. A 3,863 sq ft freehold plot on a 14 m sector road.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.46738,
+    "lng": 77.07502,
+    "priceInr": 32900000,
+    "areaSqft": 3863,
+    "bhk": null,
+    "bathrooms": 0,
+    "balconies": 0,
+    "type": "plot",
+    "furnished": false,
+    "builder": "Kalpavriksh Developers",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/830/371/2024/85",
+    "amenities": [
+      "Covered Parking",
+      "Landscaped Garden",
+      "Sewage Treatment Plant",
+      "Swimming Pool",
+      "Power Backup",
+      "Intercom Facility",
+      "Spa & Sauna",
+      "24x7 Security"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Meadowbrook Greens — view 1"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Meadowbrook Greens — view 2"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Meadowbrook Greens — view 3"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Meadowbrook Greens — view 4"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Meadowbrook Greens — view 5"
+      }
+    ],
+    "createdAt": "2026-05-04T00:00:00.000Z"
+  },
+  {
+    "id": "p-017",
+    "slug": "3-bhk-apartment-emberly-residences-vasant-kunj-17",
+    "title": "3 BHK Apartment in Emberly Residences, Vasant Kunj",
+    "description": "3 BHK Apartment of 2,009 sq ft at Emberly Residences, Vasant Kunj, New Delhi. Under construction, developed by Kalpavriksh Developers. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "Vasant Kunj",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.52163,
+    "lng": 77.16734,
+    "priceInr": 59950000,
+    "areaSqft": 2009,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Kalpavriksh Developers",
+    "status": "under-construction",
+    "possessionDate": "2028-03-01",
+    "reraNo": "RC/REP/HARERA/GGM/500/226/2024/92",
+    "amenities": [
+      "Covered Parking",
+      "Landscaped Garden",
+      "Library",
+      "Power Backup",
+      "Basketball Court",
+      "Kids Play Area",
+      "CCTV Surveillance",
+      "Intercom Facility",
+      "24x7 Security",
+      "Amphitheatre",
+      "Swimming Pool",
+      "Indoor Games Room"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Emberly Residences — view 1"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Emberly Residences — view 2"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Emberly Residences — view 3"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Emberly Residences — view 4"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Emberly Residences — view 5"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Emberly Residences — view 6"
+      }
+    ],
+    "createdAt": "2026-07-13T00:00:00.000Z"
+  },
+  {
+    "id": "p-018",
+    "slug": "4-bhk-apartment-aurum-enclave-sector-150-18",
+    "title": "4 BHK Apartment in Aurum Enclave, Sector 150",
+    "description": "4 BHK Apartment of 2,616 sq ft at Aurum Enclave, Sector 150, Noida. Newly launched, developed by Vaayu Habitats. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "Sector 150",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "lat": 28.4239,
+    "lng": 77.53266,
+    "priceInr": 23700000,
+    "areaSqft": 2616,
+    "bhk": 4,
+    "bathrooms": 3,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Vaayu Habitats",
+    "status": "new-launch",
+    "possessionDate": "2027-06-01",
+    "reraNo": "RC/REP/HARERA/GGM/810/331/2024/49",
+    "amenities": [
+      "Clubhouse",
+      "Basketball Court",
+      "Indoor Games Room",
+      "Multipurpose Hall",
+      "Power Backup",
+      "Intercom Facility",
+      "Gymnasium"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Enclave — view 1"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Enclave — view 2"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Enclave — view 3"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Enclave — view 4"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Enclave — view 5"
+      }
+    ],
+    "createdAt": "2026-02-05T00:00:00.000Z"
+  },
+  {
+    "id": "p-019",
+    "slug": "3-bhk-apartment-lumen-enclave-southern-peripheral-road-19",
+    "title": "3 BHK Apartment in Lumen Enclave, Southern Peripheral Road",
+    "description": "3 BHK Apartment of 1,744 sq ft at Lumen Enclave, Southern Peripheral Road, Gurugram. Under construction, developed by Stonecrest Infra. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Southern Peripheral Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41835,
+    "lng": 77.03666,
+    "priceInr": 16100000,
+    "areaSqft": 1744,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Stonecrest Infra",
+    "status": "under-construction",
+    "possessionDate": "2028-07-01",
+    "reraNo": "RC/REP/HARERA/GGM/695/322/2024/85",
+    "amenities": [
+      "Spa & Sauna",
+      "Covered Parking",
+      "Sewage Treatment Plant",
+      "Intercom Facility",
+      "CCTV Surveillance",
+      "Swimming Pool",
+      "Senior Citizen Corner",
+      "Amphitheatre",
+      "Multipurpose Hall",
+      "Cafeteria",
+      "Kids Play Area"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Lumen Enclave — view 1"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Lumen Enclave — view 2"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Lumen Enclave — view 3"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Lumen Enclave — view 4"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Lumen Enclave — view 5"
+      }
+    ],
+    "createdAt": "2026-05-28T00:00:00.000Z"
+  },
+  {
+    "id": "p-020",
+    "slug": "4-bhk-apartment-meadowbrook-towers-sushant-lok-phase-1-20",
+    "title": "4 BHK Apartment in Meadowbrook Towers, Sushant Lok Phase 1",
+    "description": "4 BHK Apartment of 2,463 sq ft at Meadowbrook Towers, Sushant Lok Phase 1, Gurugram. Under construction, developed by Norhaven Projects. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47439,
+    "lng": 77.06968,
+    "priceInr": 35200000,
+    "areaSqft": 2463,
+    "bhk": 4,
+    "bathrooms": 3,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Norhaven Projects",
+    "status": "under-construction",
+    "possessionDate": "2029-03-01",
+    "reraNo": "RC/REP/HARERA/GGM/712/136/2024/25",
+    "amenities": [
+      "Rainwater Harvesting",
+      "Kids Play Area",
+      "Clubhouse",
+      "Indoor Games Room",
+      "Cafeteria",
+      "Banquet Hall"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Meadowbrook Towers — view 1"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Meadowbrook Towers — view 2"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Meadowbrook Towers — view 3"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Meadowbrook Towers — view 4"
+      }
+    ],
+    "createdAt": "2026-01-08T00:00:00.000Z"
+  },
+  {
+    "id": "p-021",
+    "slug": "residential-plot-quayside-park-golf-course-road-21",
+    "title": "Residential Plot in Quayside Park, Golf Course Road",
+    "description": "Residential Plot of 3,159 sq ft at Quayside Park, Golf Course Road, Gurugram. Under construction, developed by Stonecrest Infra. A 3,159 sq ft freehold plot on a 17 m sector road.",
+    "locality": "Golf Course Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.45302,
+    "lng": 77.06562,
+    "priceInr": 41800000,
+    "areaSqft": 3159,
+    "bhk": null,
+    "bathrooms": 0,
+    "balconies": 0,
+    "type": "plot",
+    "furnished": false,
+    "builder": "Stonecrest Infra",
+    "status": "under-construction",
+    "possessionDate": "2029-11-01",
+    "reraNo": "RC/REP/HARERA/GGM/524/356/2024/64",
+    "amenities": [
+      "Tennis Court",
+      "Covered Parking",
+      "Swimming Pool",
+      "Banquet Hall",
+      "Kids Play Area",
+      "Senior Citizen Corner",
+      "Basketball Court"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Quayside Park — view 1"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Quayside Park — view 2"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Quayside Park — view 3"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Quayside Park — view 4"
+      }
+    ],
+    "createdAt": "2026-06-03T00:00:00.000Z"
+  },
+  {
+    "id": "p-022",
+    "slug": "1-bhk-independent-floor-solaris-residences-sector-150-22",
+    "title": "1 BHK Independent Floor in Solaris Residences, Sector 150",
+    "description": "1 BHK Independent Floor of 669 sq ft at Solaris Residences, Sector 150, Noida. Ready to move in, developed by Aurelia Estates. The home opens onto a bright living room with 3 balconies overlooking the central green.",
+    "locality": "Sector 150",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "lat": 28.43497,
+    "lng": 77.5283,
+    "priceInr": 7500000,
+    "areaSqft": 669,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 3,
+    "type": "independent-floor",
+    "furnished": false,
+    "builder": "Aurelia Estates",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/615/316/2024/10",
+    "amenities": [
+      "Landscaped Garden",
+      "Library",
+      "Yoga Deck",
+      "Jogging Track",
+      "CCTV Surveillance",
+      "Intercom Facility",
+      "Senior Citizen Corner",
+      "Tennis Court",
+      "Gymnasium",
+      "Amphitheatre"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Solaris Residences — view 1"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Solaris Residences — view 2"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Solaris Residences — view 3"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Solaris Residences — view 4"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Solaris Residences — view 5"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Independent Floor at Solaris Residences — view 6"
+      }
+    ],
+    "createdAt": "2026-06-18T00:00:00.000Z"
+  },
+  {
+    "id": "p-023",
+    "slug": "4-bhk-apartment-lumen-heights-sushant-lok-phase-1-23",
+    "title": "4 BHK Apartment in Lumen Heights, Sushant Lok Phase 1",
+    "description": "4 BHK Apartment of 2,410 sq ft at Lumen Heights, Sushant Lok Phase 1, Gurugram. Newly launched, developed by Meridian Realty. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47525,
+    "lng": 77.06681,
+    "priceInr": 38950000,
+    "areaSqft": 2410,
+    "bhk": 4,
+    "bathrooms": 3,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Meridian Realty",
+    "status": "new-launch",
+    "possessionDate": "2027-01-01",
+    "reraNo": "RC/REP/HARERA/GGM/706/166/2024/62",
+    "amenities": [
+      "Landscaped Garden",
+      "Power Backup",
+      "Tennis Court",
+      "Multipurpose Hall",
+      "Indoor Games Room",
+      "Spa & Sauna",
+      "Basketball Court",
+      "Library",
+      "Amphitheatre",
+      "Covered Parking",
+      "Yoga Deck",
+      "Clubhouse"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Lumen Heights — view 1"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Lumen Heights — view 2"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Lumen Heights — view 3"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Lumen Heights — view 4"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Lumen Heights — view 5"
+      }
+    ],
+    "createdAt": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "id": "p-024",
+    "slug": "residential-plot-oakhaven-manor-golf-course-road-24",
+    "title": "Residential Plot in Oakhaven Manor, Golf Course Road",
+    "description": "Residential Plot of 2,522 sq ft at Oakhaven Manor, Golf Course Road, Gurugram. Newly launched, developed by Trevon Group. A 2,522 sq ft freehold plot on a 10 m sector road.",
+    "locality": "Golf Course Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.46869,
+    "lng": 77.07945,
+    "priceInr": 33700000,
+    "areaSqft": 2522,
+    "bhk": null,
+    "bathrooms": 0,
+    "balconies": 0,
+    "type": "plot",
+    "furnished": false,
+    "builder": "Trevon Group",
+    "status": "new-launch",
+    "possessionDate": "2029-07-01",
+    "reraNo": "RC/REP/HARERA/GGM/794/387/2024/17",
+    "amenities": [
+      "Clubhouse",
+      "Cafeteria",
+      "Senior Citizen Corner",
+      "Covered Parking",
+      "CCTV Surveillance",
+      "Spa & Sauna",
+      "Jogging Track",
+      "Multipurpose Hall",
+      "Tennis Court",
+      "Kids Play Area",
+      "Banquet Hall",
+      "Sewage Treatment Plant"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Oakhaven Manor — view 1"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Oakhaven Manor — view 2"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Oakhaven Manor — view 3"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Oakhaven Manor — view 4"
+      }
+    ],
+    "createdAt": "2026-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "p-025",
+    "slug": "3-bhk-apartment-celeste-park-golf-course-road-25",
+    "title": "3 BHK Apartment in Celeste Park, Golf Course Road",
+    "description": "3 BHK Apartment of 2,028 sq ft at Celeste Park, Golf Course Road, Gurugram. Newly launched, developed by Anvaya Realty. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "Golf Course Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.45628,
+    "lng": 77.08209,
+    "priceInr": 50100000,
+    "areaSqft": 2028,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Anvaya Realty",
+    "status": "new-launch",
+    "possessionDate": "2028-07-01",
+    "reraNo": "RC/REP/HARERA/GGM/581/113/2024/59",
+    "amenities": [
+      "Kids Play Area",
+      "Amphitheatre",
+      "Basketball Court",
+      "Gymnasium",
+      "Yoga Deck",
+      "Spa & Sauna"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Park — view 1"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Park — view 2"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Park — view 3"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Park — view 4"
+      }
+    ],
+    "createdAt": "2026-02-27T00:00:00.000Z"
+  },
+  {
+    "id": "p-026",
+    "slug": "3-bhk-apartment-tessera-park-southern-peripheral-road-26",
+    "title": "3 BHK Apartment in Tessera Park, Southern Peripheral Road",
+    "description": "3 BHK Apartment of 2,033 sq ft at Tessera Park, Southern Peripheral Road, Gurugram. Ready to move in, developed by Stonecrest Infra. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Southern Peripheral Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41152,
+    "lng": 77.04206,
+    "priceInr": 20950000,
+    "areaSqft": 2033,
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Stonecrest Infra",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/848/159/2024/97",
+    "amenities": [
+      "Cafeteria",
+      "Indoor Games Room",
+      "Swimming Pool",
+      "Kids Play Area",
+      "Intercom Facility",
+      "Basketball Court",
+      "Amphitheatre"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 1"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 2"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 3"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 4"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 5"
+      }
+    ],
+    "createdAt": "2026-04-09T00:00:00.000Z"
+  },
+  {
+    "id": "p-027",
+    "slug": "3-bhk-independent-floor-marigold-manor-golf-course-road-27",
+    "title": "3 BHK Independent Floor in Marigold Manor, Golf Course Road",
+    "description": "3 BHK Independent Floor of 2,215 sq ft at Marigold Manor, Golf Course Road, Gurugram. Newly launched, developed by Anvaya Realty. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "Golf Course Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.4569,
+    "lng": 77.07576,
+    "priceInr": 52950000,
+    "areaSqft": 2215,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 3,
+    "type": "independent-floor",
+    "furnished": true,
+    "builder": "Anvaya Realty",
+    "status": "new-launch",
+    "possessionDate": "2028-01-01",
+    "reraNo": "RC/REP/HARERA/GGM/713/127/2024/55",
+    "amenities": [
+      "Spa & Sauna",
+      "Clubhouse",
+      "Basketball Court",
+      "Cafeteria",
+      "Power Backup",
+      "Swimming Pool",
+      "Rainwater Harvesting",
+      "Kids Play Area",
+      "Senior Citizen Corner",
+      "CCTV Surveillance",
+      "Intercom Facility"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Marigold Manor — view 1"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Marigold Manor — view 2"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Marigold Manor — view 3"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Marigold Manor — view 4"
+      }
+    ],
+    "createdAt": "2026-01-14T00:00:00.000Z"
+  },
+  {
+    "id": "p-028",
+    "slug": "2-bhk-independent-floor-northbank-towers-new-gurugram-sector-84-28",
+    "title": "2 BHK Independent Floor in Northbank Towers, New Gurugram, Sector 84",
+    "description": "2 BHK Independent Floor of 1,128 sq ft at Northbank Towers, New Gurugram, Sector 84, Gurugram. Ready to move in, developed by Trevon Group. The home opens onto a bright living room with 1 balconies overlooking the central green.",
+    "locality": "New Gurugram, Sector 84",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41473,
+    "lng": 76.95723,
+    "priceInr": 9850000,
+    "areaSqft": 1128,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 1,
+    "type": "independent-floor",
+    "furnished": true,
+    "builder": "Trevon Group",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/890/113/2024/76",
+    "amenities": [
+      "Rainwater Harvesting",
+      "Banquet Hall",
+      "Amphitheatre",
+      "Indoor Games Room",
+      "Sewage Treatment Plant",
+      "Library",
+      "Tennis Court",
+      "Spa & Sauna",
+      "Basketball Court"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Northbank Towers — view 1"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Northbank Towers — view 2"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Northbank Towers — view 3"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Northbank Towers — view 4"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Northbank Towers — view 5"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Independent Floor at Northbank Towers — view 6"
+      }
+    ],
+    "createdAt": "2026-05-19T00:00:00.000Z"
+  },
+  {
+    "id": "p-029",
+    "slug": "residential-plot-marigold-towers-vasant-kunj-29",
+    "title": "Residential Plot in Marigold Towers, Vasant Kunj",
+    "description": "Residential Plot of 2,669 sq ft at Marigold Towers, Vasant Kunj, New Delhi. Ready to move in, developed by Stonecrest Infra. A 2,669 sq ft freehold plot on a 14 m sector road.",
+    "locality": "Vasant Kunj",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.52358,
+    "lng": 77.16826,
+    "priceInr": 32500000,
+    "areaSqft": 2669,
+    "bhk": null,
+    "bathrooms": 0,
+    "balconies": 0,
+    "type": "plot",
+    "furnished": true,
+    "builder": "Stonecrest Infra",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/590/242/2024/11",
+    "amenities": [
+      "CCTV Surveillance",
+      "Rainwater Harvesting",
+      "Library",
+      "Covered Parking",
+      "Amphitheatre",
+      "Banquet Hall",
+      "Intercom Facility",
+      "24x7 Security"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Marigold Towers — view 1"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Marigold Towers — view 2"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Marigold Towers — view 3"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Marigold Towers — view 4"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Marigold Towers — view 5"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Marigold Towers — view 6"
+      }
+    ],
+    "createdAt": "2025-09-04T00:00:00.000Z"
+  },
+  {
+    "id": "p-030",
+    "slug": "studio-apartment-zenith-manor-new-gurugram-sector-84-30",
+    "title": "Studio Apartment in Zenith Manor, New Gurugram, Sector 84",
+    "description": "Studio Apartment of 460 sq ft at Zenith Manor, New Gurugram, Sector 84, Gurugram. Under construction, developed by Stonecrest Infra. The home opens onto a bright living room with 2 balconies overlooking the central green.",
+    "locality": "New Gurugram, Sector 84",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41607,
+    "lng": 76.95344,
+    "priceInr": 4250000,
+    "areaSqft": 460,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 3,
+    "type": "studio",
+    "furnished": false,
+    "builder": "Stonecrest Infra",
+    "status": "under-construction",
+    "possessionDate": "2027-06-01",
+    "reraNo": "RC/REP/HARERA/GGM/843/249/2024/73",
+    "amenities": [
+      "Kids Play Area",
+      "Multipurpose Hall",
+      "Landscaped Garden",
+      "Covered Parking",
+      "Rainwater Harvesting",
+      "Gymnasium",
+      "Jogging Track",
+      "Amphitheatre",
+      "Swimming Pool",
+      "Banquet Hall",
+      "Intercom Facility",
+      "Senior Citizen Corner"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Zenith Manor — view 1"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Zenith Manor — view 2"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Zenith Manor — view 3"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Zenith Manor — view 4"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Zenith Manor — view 5"
+      }
+    ],
+    "createdAt": "2026-05-09T00:00:00.000Z"
+  },
+  {
+    "id": "p-031",
+    "slug": "3-bhk-apartment-tessera-park-mg-road-31",
+    "title": "3 BHK Apartment in Tessera Park, MG Road",
+    "description": "3 BHK Apartment of 1,487 sq ft at Tessera Park, MG Road, Gurugram. Under construction, developed by Suryam Build. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47822,
+    "lng": 77.08279,
+    "priceInr": 26100000,
+    "areaSqft": 1487,
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Suryam Build",
+    "status": "under-construction",
+    "possessionDate": "2029-09-01",
+    "reraNo": "RC/REP/HARERA/GGM/852/274/2024/67",
+    "amenities": [
+      "Amphitheatre",
+      "Basketball Court",
+      "Banquet Hall",
+      "Gymnasium",
+      "CCTV Surveillance",
+      "Power Backup",
+      "24x7 Security",
+      "Sewage Treatment Plant",
+      "Cafeteria"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 1"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 2"
+      },
+      {
+        "url": "/properties/home-04.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 3"
+      },
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Tessera Park — view 4"
+      }
+    ],
+    "createdAt": "2025-09-06T00:00:00.000Z"
+  },
+  {
+    "id": "p-032",
+    "slug": "3-bhk-apartment-celeste-enclave-mg-road-32",
+    "title": "3 BHK Apartment in Celeste Enclave, MG Road",
+    "description": "3 BHK Apartment of 1,543 sq ft at Celeste Enclave, MG Road, Gurugram. Under construction, developed by Anvaya Realty. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.48084,
+    "lng": 77.0712,
+    "priceInr": 28150000,
+    "areaSqft": 1543,
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Anvaya Realty",
+    "status": "under-construction",
+    "possessionDate": "2027-04-01",
+    "reraNo": "RC/REP/HARERA/GGM/585/158/2024/75",
+    "amenities": [
+      "Intercom Facility",
+      "Clubhouse",
+      "Kids Play Area",
+      "CCTV Surveillance",
+      "Spa & Sauna",
+      "Gymnasium",
+      "Power Backup",
+      "Indoor Games Room",
+      "Covered Parking",
+      "Yoga Deck",
+      "Senior Citizen Corner"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Enclave — view 1"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Enclave — view 2"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Enclave — view 3"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Celeste Enclave — view 4"
+      }
+    ],
+    "createdAt": "2026-04-29T00:00:00.000Z"
+  },
+  {
+    "id": "p-033",
+    "slug": "3-bhk-apartment-solaris-heights-golf-course-road-33",
+    "title": "3 BHK Apartment in Solaris Heights, Golf Course Road",
+    "description": "3 BHK Apartment of 1,655 sq ft at Solaris Heights, Golf Course Road, Gurugram. Newly launched, developed by Aurelia Estates. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "Golf Course Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.45322,
+    "lng": 77.08191,
+    "priceInr": 42750000,
+    "areaSqft": 1655,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Aurelia Estates",
+    "status": "new-launch",
+    "possessionDate": "2029-11-01",
+    "reraNo": "RC/REP/HARERA/GGM/566/261/2024/89",
+    "amenities": [
+      "Basketball Court",
+      "Banquet Hall",
+      "Cafeteria",
+      "CCTV Surveillance",
+      "Amphitheatre",
+      "24x7 Security"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Solaris Heights — view 1"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Solaris Heights — view 2"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Solaris Heights — view 3"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Solaris Heights — view 4"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Solaris Heights — view 5"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Apartment at Solaris Heights — view 6"
+      }
+    ],
+    "createdAt": "2026-04-24T00:00:00.000Z"
+  },
+  {
+    "id": "p-034",
+    "slug": "2-bhk-villa-astoria-park-mg-road-34",
+    "title": "2 BHK Villa in Astoria Park, MG Road",
+    "description": "2 BHK Villa of 3,930 sq ft at Astoria Park, MG Road, Gurugram. Ready to move in, developed by Stonecrest Infra. The home opens onto a bright living room with 3 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47282,
+    "lng": 77.07622,
+    "priceInr": 57150000,
+    "areaSqft": 3930,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 1,
+    "type": "villa",
+    "furnished": true,
+    "builder": "Stonecrest Infra",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/882/158/2024/52",
+    "amenities": [
+      "CCTV Surveillance",
+      "Covered Parking",
+      "Power Backup",
+      "Intercom Facility",
+      "Swimming Pool",
+      "Spa & Sauna",
+      "Amphitheatre",
+      "24x7 Security",
+      "Senior Citizen Corner",
+      "Cafeteria"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-05.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Villa at Astoria Park — view 1"
+      },
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Villa at Astoria Park — view 2"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Villa at Astoria Park — view 3"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Villa at Astoria Park — view 4"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Villa at Astoria Park — view 5"
+      }
+    ],
+    "createdAt": "2025-12-08T00:00:00.000Z"
+  },
+  {
+    "id": "p-035",
+    "slug": "4-bhk-villa-marigold-towers-mg-road-35",
+    "title": "4 BHK Villa in Marigold Towers, MG Road",
+    "description": "4 BHK Villa of 2,820 sq ft at Marigold Towers, MG Road, Gurugram. Newly launched, developed by Stonecrest Infra. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47199,
+    "lng": 77.07891,
+    "priceInr": 54500000,
+    "areaSqft": 2820,
+    "bhk": 4,
+    "bathrooms": 3,
+    "balconies": 1,
+    "type": "villa",
+    "furnished": true,
+    "builder": "Stonecrest Infra",
+    "status": "new-launch",
+    "possessionDate": "2027-06-01",
+    "reraNo": "RC/REP/HARERA/GGM/550/136/2024/93",
+    "amenities": [
+      "24x7 Security",
+      "Multipurpose Hall",
+      "Rainwater Harvesting",
+      "Kids Play Area",
+      "Basketball Court",
+      "Library",
+      "Swimming Pool",
+      "CCTV Surveillance",
+      "Senior Citizen Corner"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Marigold Towers — view 1"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Marigold Towers — view 2"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Marigold Towers — view 3"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Marigold Towers — view 4"
+      }
+    ],
+    "createdAt": "2025-08-19T00:00:00.000Z"
+  },
+  {
+    "id": "p-036",
+    "slug": "studio-apartment-astoria-manor-sushant-lok-phase-1-36",
+    "title": "Studio Apartment in Astoria Manor, Sushant Lok Phase 1",
+    "description": "Studio Apartment of 550 sq ft at Astoria Manor, Sushant Lok Phase 1, Gurugram. Newly launched, developed by Aurelia Estates. The home opens onto a bright living room with 2 balconies overlooking the central green.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.46091,
+    "lng": 77.08179,
+    "priceInr": 9400000,
+    "areaSqft": 550,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 3,
+    "type": "studio",
+    "furnished": true,
+    "builder": "Aurelia Estates",
+    "status": "new-launch",
+    "possessionDate": "2027-08-01",
+    "reraNo": "RC/REP/HARERA/GGM/542/276/2024/71",
+    "amenities": [
+      "Tennis Court",
+      "Yoga Deck",
+      "Senior Citizen Corner",
+      "Rainwater Harvesting",
+      "Covered Parking",
+      "Jogging Track",
+      "Swimming Pool"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Astoria Manor — view 1"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Astoria Manor — view 2"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Astoria Manor — view 3"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Astoria Manor — view 4"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Astoria Manor — view 5"
+      }
+    ],
+    "createdAt": "2025-08-07T00:00:00.000Z"
+  },
+  {
+    "id": "p-037",
+    "slug": "2-bhk-apartment-aurum-park-mg-road-37",
+    "title": "2 BHK Apartment in Aurum Park, MG Road",
+    "description": "2 BHK Apartment of 1,162 sq ft at Aurum Park, MG Road, Gurugram. Ready to move in, developed by Trevon Group. The home opens onto a bright living room with 3 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.47039,
+    "lng": 77.08356,
+    "priceInr": 17000000,
+    "areaSqft": 1162,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Trevon Group",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/622/181/2024/68",
+    "amenities": [
+      "Jogging Track",
+      "Tennis Court",
+      "Yoga Deck",
+      "Covered Parking",
+      "Banquet Hall",
+      "Indoor Games Room",
+      "Cafeteria",
+      "Rainwater Harvesting"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Park — view 1"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Park — view 2"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Park — view 3"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Aurum Park — view 4"
+      }
+    ],
+    "createdAt": "2025-08-31T00:00:00.000Z"
+  },
+  {
+    "id": "p-038",
+    "slug": "3-bhk-independent-floor-tessera-towers-raj-nagar-extension-38",
+    "title": "3 BHK Independent Floor in Tessera Towers, Raj Nagar Extension",
+    "description": "3 BHK Independent Floor of 2,070 sq ft at Tessera Towers, Raj Nagar Extension, Ghaziabad. Ready to move in, developed by Aurelia Estates. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Raj Nagar Extension",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "lat": 28.70115,
+    "lng": 77.43366,
+    "priceInr": 13850000,
+    "areaSqft": 2070,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 3,
+    "type": "independent-floor",
+    "furnished": false,
+    "builder": "Aurelia Estates",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/791/321/2024/58",
+    "amenities": [
+      "Sewage Treatment Plant",
+      "Basketball Court",
+      "Senior Citizen Corner",
+      "Multipurpose Hall",
+      "Jogging Track",
+      "CCTV Surveillance",
+      "Intercom Facility",
+      "Tennis Court",
+      "Swimming Pool",
+      "Covered Parking",
+      "Rainwater Harvesting",
+      "Power Backup"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Towers — view 1"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Towers — view 2"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Towers — view 3"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Towers — view 4"
+      }
+    ],
+    "createdAt": "2025-08-20T00:00:00.000Z"
+  },
+  {
+    "id": "p-039",
+    "slug": "4-bhk-apartment-highgrove-manor-vasant-kunj-39",
+    "title": "4 BHK Apartment in Highgrove Manor, Vasant Kunj",
+    "description": "4 BHK Apartment of 3,312 sq ft at Highgrove Manor, Vasant Kunj, New Delhi. Ready to move in, developed by Stonecrest Infra. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Vasant Kunj",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.51782,
+    "lng": 77.15521,
+    "priceInr": 92250000,
+    "areaSqft": 3312,
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Stonecrest Infra",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/703/263/2024/69",
+    "amenities": [
+      "Kids Play Area",
+      "Banquet Hall",
+      "Clubhouse",
+      "Jogging Track",
+      "Covered Parking",
+      "Cafeteria",
+      "Gymnasium",
+      "Indoor Games Room",
+      "Sewage Treatment Plant",
+      "24x7 Security"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Manor — view 1"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Manor — view 2"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Manor — view 3"
+      },
+      {
+        "url": "/properties/home-03.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Highgrove Manor — view 4"
+      }
+    ],
+    "createdAt": "2025-10-24T00:00:00.000Z"
+  },
+  {
+    "id": "p-040",
+    "slug": "3-bhk-independent-floor-aurum-park-raj-nagar-extension-40",
+    "title": "3 BHK Independent Floor in Aurum Park, Raj Nagar Extension",
+    "description": "3 BHK Independent Floor of 2,062 sq ft at Aurum Park, Raj Nagar Extension, Ghaziabad. Under construction, developed by Trevon Group. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "Raj Nagar Extension",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "lat": 28.71177,
+    "lng": 77.4287,
+    "priceInr": 13550000,
+    "areaSqft": 2062,
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 3,
+    "type": "independent-floor",
+    "furnished": false,
+    "builder": "Trevon Group",
+    "status": "under-construction",
+    "possessionDate": "2029-04-01",
+    "reraNo": "RC/REP/HARERA/GGM/676/223/2024/20",
+    "amenities": [
+      "24x7 Security",
+      "Senior Citizen Corner",
+      "Spa & Sauna",
+      "CCTV Surveillance",
+      "Indoor Games Room",
+      "Clubhouse",
+      "Intercom Facility",
+      "Amphitheatre",
+      "Swimming Pool",
+      "Rainwater Harvesting",
+      "Banquet Hall"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Aurum Park — view 1"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Aurum Park — view 2"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Aurum Park — view 3"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Aurum Park — view 4"
+      }
+    ],
+    "createdAt": "2026-02-09T00:00:00.000Z"
+  },
+  {
+    "id": "p-041",
+    "slug": "studio-apartment-lumen-enclave-golf-course-road-41",
+    "title": "Studio Apartment in Lumen Enclave, Golf Course Road",
+    "description": "Studio Apartment of 535 sq ft at Lumen Enclave, Golf Course Road, Gurugram. Under construction, developed by Stonecrest Infra. The home opens onto a bright living room with 1 balconies overlooking the central green.",
+    "locality": "Golf Course Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.45818,
+    "lng": 77.07164,
+    "priceInr": 12700000,
+    "areaSqft": 535,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 2,
+    "type": "studio",
+    "furnished": false,
+    "builder": "Stonecrest Infra",
+    "status": "under-construction",
+    "possessionDate": "2029-05-01",
+    "reraNo": "RC/REP/HARERA/GGM/900/377/2024/97",
+    "amenities": [
+      "Multipurpose Hall",
+      "Swimming Pool",
+      "Cafeteria",
+      "Clubhouse",
+      "Indoor Games Room",
+      "Banquet Hall",
+      "Intercom Facility",
+      "Senior Citizen Corner",
+      "Covered Parking",
+      "Jogging Track",
+      "Gymnasium"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Lumen Enclave — view 1"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Lumen Enclave — view 2"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Lumen Enclave — view 3"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Lumen Enclave — view 4"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Lumen Enclave — view 5"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Lumen Enclave — view 6"
+      }
+    ],
+    "createdAt": "2025-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "p-042",
+    "slug": "4-bhk-apartment-marigold-manor-golf-course-extension-road-42",
+    "title": "4 BHK Apartment in Marigold Manor, Golf Course Extension Road",
+    "description": "4 BHK Apartment of 2,707 sq ft at Marigold Manor, Golf Course Extension Road, Gurugram. Under construction, developed by Trevon Group. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Golf Course Extension Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.42542,
+    "lng": 77.05071,
+    "priceInr": 44900000,
+    "areaSqft": 2707,
+    "bhk": 4,
+    "bathrooms": 3,
+    "balconies": 1,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Trevon Group",
+    "status": "under-construction",
+    "possessionDate": "2029-01-01",
+    "reraNo": "RC/REP/HARERA/GGM/695/295/2024/56",
+    "amenities": [
+      "Covered Parking",
+      "Banquet Hall",
+      "Clubhouse",
+      "Swimming Pool",
+      "CCTV Surveillance",
+      "Jogging Track",
+      "Spa & Sauna",
+      "Multipurpose Hall",
+      "Gymnasium",
+      "Power Backup",
+      "Basketball Court",
+      "Senior Citizen Corner"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Marigold Manor — view 1"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Marigold Manor — view 2"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Marigold Manor — view 3"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Marigold Manor — view 4"
+      }
+    ],
+    "createdAt": "2025-12-18T00:00:00.000Z"
+  },
+  {
+    "id": "p-043",
+    "slug": "residential-plot-rivendell-residences-sector-128-noida-expressway-43",
+    "title": "Residential Plot in Rivendell Residences, Sector 128, Noida Expressway",
+    "description": "Residential Plot of 2,301 sq ft at Rivendell Residences, Sector 128, Noida Expressway, Noida. Ready to move in, developed by Anvaya Realty. A 2,301 sq ft freehold plot on a 18 m sector road.",
+    "locality": "Sector 128, Noida Expressway",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "lat": 28.52218,
+    "lng": 77.36834,
+    "priceInr": 18850000,
+    "areaSqft": 2301,
+    "bhk": null,
+    "bathrooms": 0,
+    "balconies": 0,
+    "type": "plot",
+    "furnished": false,
+    "builder": "Anvaya Realty",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/503/320/2024/26",
+    "amenities": [
+      "Landscaped Garden",
+      "Multipurpose Hall",
+      "Jogging Track",
+      "Rainwater Harvesting",
+      "Library",
+      "Clubhouse",
+      "Basketball Court",
+      "Swimming Pool",
+      "Amphitheatre",
+      "CCTV Surveillance"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Rivendell Residences — view 1"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Rivendell Residences — view 2"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Rivendell Residences — view 3"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Rivendell Residences — view 4"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Rivendell Residences — view 5"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Residential Plot at Rivendell Residences — view 6"
+      }
+    ],
+    "createdAt": "2025-04-03T00:00:00.000Z"
+  },
+  {
+    "id": "p-044",
+    "slug": "3-bhk-independent-floor-solaris-greens-sushant-lok-phase-1-44",
+    "title": "3 BHK Independent Floor in Solaris Greens, Sushant Lok Phase 1",
+    "description": "3 BHK Independent Floor of 1,731 sq ft at Solaris Greens, Sushant Lok Phase 1, Gurugram. Under construction, developed by Aurelia Estates. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "Sushant Lok Phase 1",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.46804,
+    "lng": 77.07578,
+    "priceInr": 28800000,
+    "areaSqft": 1731,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 2,
+    "type": "independent-floor",
+    "furnished": false,
+    "builder": "Aurelia Estates",
+    "status": "under-construction",
+    "possessionDate": "2027-10-01",
+    "reraNo": "RC/REP/HARERA/GGM/726/365/2024/85",
+    "amenities": [
+      "24x7 Security",
+      "Rainwater Harvesting",
+      "Multipurpose Hall",
+      "Intercom Facility",
+      "Library",
+      "Covered Parking",
+      "Landscaped Garden",
+      "Tennis Court",
+      "Basketball Court",
+      "Banquet Hall"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Greens — view 1"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Greens — view 2"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Greens — view 3"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Greens — view 4"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Greens — view 5"
+      }
+    ],
+    "createdAt": "2026-02-28T00:00:00.000Z"
+  },
+  {
+    "id": "p-045",
+    "slug": "3-bhk-independent-floor-tessera-residences-new-gurugram-sector-84-45",
+    "title": "3 BHK Independent Floor in Tessera Residences, New Gurugram, Sector 84",
+    "description": "3 BHK Independent Floor of 1,547 sq ft at Tessera Residences, New Gurugram, Sector 84, Gurugram. Newly launched, developed by Thirdwave Developers. The home opens onto a double-height living room with 1 balconies overlooking the central green.",
+    "locality": "New Gurugram, Sector 84",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.40317,
+    "lng": 76.95857,
+    "priceInr": 14400000,
+    "areaSqft": 1547,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 3,
+    "type": "independent-floor",
+    "furnished": true,
+    "builder": "Thirdwave Developers",
+    "status": "new-launch",
+    "possessionDate": "2027-11-01",
+    "reraNo": "RC/REP/HARERA/GGM/511/260/2024/13",
+    "amenities": [
+      "Clubhouse",
+      "Jogging Track",
+      "Kids Play Area",
+      "Senior Citizen Corner",
+      "Library",
+      "Landscaped Garden",
+      "Tennis Court",
+      "Indoor Games Room",
+      "Power Backup",
+      "Cafeteria",
+      "Rainwater Harvesting"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Residences — view 1"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Residences — view 2"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Residences — view 3"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Residences — view 4"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Tessera Residences — view 5"
+      }
+    ],
+    "createdAt": "2025-03-08T00:00:00.000Z"
+  },
+  {
+    "id": "p-046",
+    "slug": "4-bhk-villa-highgrove-towers-southern-peripheral-road-46",
+    "title": "4 BHK Villa in Highgrove Towers, Southern Peripheral Road",
+    "description": "4 BHK Villa of 4,470 sq ft at Highgrove Towers, Southern Peripheral Road, Gurugram. Under construction, developed by Thirdwave Developers. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "Southern Peripheral Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41856,
+    "lng": 77.03404,
+    "priceInr": 44350000,
+    "areaSqft": 4470,
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 3,
+    "type": "villa",
+    "furnished": false,
+    "builder": "Thirdwave Developers",
+    "status": "under-construction",
+    "possessionDate": "2029-09-01",
+    "reraNo": "RC/REP/HARERA/GGM/895/287/2024/99",
+    "amenities": [
+      "Rainwater Harvesting",
+      "Sewage Treatment Plant",
+      "Banquet Hall",
+      "Basketball Court",
+      "Tennis Court",
+      "CCTV Surveillance",
+      "Senior Citizen Corner"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Highgrove Towers — view 1"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Highgrove Towers — view 2"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Highgrove Towers — view 3"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Highgrove Towers — view 4"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Highgrove Towers — view 5"
+      }
+    ],
+    "createdAt": "2025-07-08T00:00:00.000Z"
+  },
+  {
+    "id": "p-047",
+    "slug": "studio-apartment-celeste-park-sector-128-noida-expressway-47",
+    "title": "Studio Apartment in Celeste Park, Sector 128, Noida Expressway",
+    "description": "Studio Apartment of 536 sq ft at Celeste Park, Sector 128, Noida Expressway, Noida. Ready to move in, developed by Trevon Group. The home opens onto a bright living room with 1 balconies overlooking the central green.",
+    "locality": "Sector 128, Noida Expressway",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "lat": 28.51829,
+    "lng": 77.3704,
+    "priceInr": 7250000,
+    "areaSqft": 536,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 2,
+    "type": "studio",
+    "furnished": true,
+    "builder": "Trevon Group",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/781/267/2024/47",
+    "amenities": [
+      "Gymnasium",
+      "24x7 Security",
+      "Sewage Treatment Plant",
+      "Basketball Court",
+      "Cafeteria",
+      "Spa & Sauna"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Celeste Park — view 1"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Celeste Park — view 2"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Celeste Park — view 3"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Celeste Park — view 4"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Studio Apartment at Celeste Park — view 5"
+      }
+    ],
+    "createdAt": "2025-03-28T00:00:00.000Z"
+  },
+  {
+    "id": "p-048",
+    "slug": "2-bhk-apartment-skyline-manor-new-gurugram-sector-84-48",
+    "title": "2 BHK Apartment in Skyline Manor, New Gurugram, Sector 84",
+    "description": "2 BHK Apartment of 994 sq ft at Skyline Manor, New Gurugram, Sector 84, Gurugram. Under construction, developed by Meridian Realty. The home opens onto a bright living room with 1 balconies overlooking the central green.",
+    "locality": "New Gurugram, Sector 84",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41645,
+    "lng": 76.94526,
+    "priceInr": 9500000,
+    "areaSqft": 994,
+    "bhk": 2,
+    "bathrooms": 2,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Meridian Realty",
+    "status": "under-construction",
+    "possessionDate": "2027-07-01",
+    "reraNo": "RC/REP/HARERA/GGM/732/366/2024/63",
+    "amenities": [
+      "Yoga Deck",
+      "Cafeteria",
+      "Tennis Court",
+      "Amphitheatre",
+      "Gymnasium",
+      "Clubhouse",
+      "Kids Play Area",
+      "Senior Citizen Corner",
+      "Jogging Track"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-06.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Skyline Manor — view 1"
+      },
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Skyline Manor — view 2"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Skyline Manor — view 3"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Skyline Manor — view 4"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Skyline Manor — view 5"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Skyline Manor — view 6"
+      }
+    ],
+    "createdAt": "2025-06-18T00:00:00.000Z"
+  },
+  {
+    "id": "p-049",
+    "slug": "1-bhk-apartment-quayside-residences-sohna-road-49",
+    "title": "1 BHK Apartment in Quayside Residences, Sohna Road",
+    "description": "1 BHK Apartment of 536 sq ft at Quayside Residences, Sohna Road, Gurugram. Ready to move in, developed by Anvaya Realty. The home opens onto a bright living room with 1 balconies overlooking the central green.",
+    "locality": "Sohna Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.40636,
+    "lng": 77.02892,
+    "priceInr": 4650000,
+    "areaSqft": 536,
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": true,
+    "builder": "Anvaya Realty",
+    "status": "ready-to-move",
+    "possessionDate": null,
+    "reraNo": "RC/REP/HARERA/GGM/784/158/2024/58",
+    "amenities": [
+      "Covered Parking",
+      "Yoga Deck",
+      "Senior Citizen Corner",
+      "Spa & Sauna",
+      "Kids Play Area",
+      "CCTV Surveillance"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Apartment at Quayside Residences — view 1"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Apartment at Quayside Residences — view 2"
+      },
+      {
+        "url": "/properties/home-16.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Apartment at Quayside Residences — view 3"
+      },
+      {
+        "url": "/properties/home-01.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Apartment at Quayside Residences — view 4"
+      },
+      {
+        "url": "/properties/home-02.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "1 BHK Apartment at Quayside Residences — view 5"
+      }
+    ],
+    "createdAt": "2025-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "p-050",
+    "slug": "2-bhk-apartment-westwind-residences-mg-road-50",
+    "title": "2 BHK Apartment in Westwind Residences, MG Road",
+    "description": "2 BHK Apartment of 1,018 sq ft at Westwind Residences, MG Road, Gurugram. Under construction, developed by Meridian Realty. The home opens onto a bright living room with 2 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.4726,
+    "lng": 77.0725,
+    "priceInr": 14350000,
+    "areaSqft": 1018,
+    "bhk": 2,
+    "bathrooms": 1,
+    "balconies": 2,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Meridian Realty",
+    "status": "under-construction",
+    "possessionDate": "2027-08-01",
+    "reraNo": "RC/REP/HARERA/GGM/735/299/2024/56",
+    "amenities": [
+      "Tennis Court",
+      "Library",
+      "Amphitheatre",
+      "Power Backup",
+      "Sewage Treatment Plant",
+      "Yoga Deck",
+      "Indoor Games Room",
+      "Jogging Track",
+      "Swimming Pool",
+      "24x7 Security",
+      "Rainwater Harvesting"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Westwind Residences — view 1"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Westwind Residences — view 2"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Westwind Residences — view 3"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Westwind Residences — view 4"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Westwind Residences — view 5"
+      },
+      {
+        "url": "/properties/home-15.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Westwind Residences — view 6"
+      }
+    ],
+    "createdAt": "2025-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "p-051",
+    "slug": "4-bhk-villa-astoria-residences-vasant-kunj-51",
+    "title": "4 BHK Villa in Astoria Residences, Vasant Kunj",
+    "description": "4 BHK Villa of 2,885 sq ft at Astoria Residences, Vasant Kunj, New Delhi. Newly launched, developed by Stonecrest Infra. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "Vasant Kunj",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.52493,
+    "lng": 77.16055,
+    "priceInr": 83900000,
+    "areaSqft": 2885,
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 3,
+    "type": "villa",
+    "furnished": false,
+    "builder": "Stonecrest Infra",
+    "status": "new-launch",
+    "possessionDate": "2027-08-01",
+    "reraNo": "RC/REP/HARERA/GGM/855/194/2024/30",
+    "amenities": [
+      "Jogging Track",
+      "Senior Citizen Corner",
+      "Basketball Court",
+      "Spa & Sauna",
+      "Power Backup",
+      "24x7 Security",
+      "Tennis Court"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Astoria Residences — view 1"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Astoria Residences — view 2"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Astoria Residences — view 3"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Villa at Astoria Residences — view 4"
+      }
+    ],
+    "createdAt": "2026-01-24T00:00:00.000Z"
+  },
+  {
+    "id": "p-052",
+    "slug": "4-bhk-apartment-aurum-heights-mg-road-52",
+    "title": "4 BHK Apartment in Aurum Heights, MG Road",
+    "description": "4 BHK Apartment of 2,772 sq ft at Aurum Heights, MG Road, Gurugram. Newly launched, developed by Norhaven Projects. The home opens onto a double-height living room with 3 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.4753,
+    "lng": 77.07161,
+    "priceInr": 45550000,
+    "areaSqft": 2772,
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Norhaven Projects",
+    "status": "new-launch",
+    "possessionDate": "2027-02-01",
+    "reraNo": "RC/REP/HARERA/GGM/845/214/2024/95",
+    "amenities": [
+      "Banquet Hall",
+      "Landscaped Garden",
+      "Kids Play Area",
+      "Basketball Court",
+      "Swimming Pool",
+      "Gymnasium",
+      "Cafeteria",
+      "24x7 Security",
+      "Library",
+      "Multipurpose Hall"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Heights — view 1"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Heights — view 2"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Heights — view 3"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Heights — view 4"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "4 BHK Apartment at Aurum Heights — view 5"
+      }
+    ],
+    "createdAt": "2025-06-29T00:00:00.000Z"
+  },
+  {
+    "id": "p-053",
+    "slug": "2-bhk-apartment-zenith-heights-sohna-road-53",
+    "title": "2 BHK Apartment in Zenith Heights, Sohna Road",
+    "description": "2 BHK Apartment of 1,000 sq ft at Zenith Heights, Sohna Road, Gurugram. Newly launched, developed by Kalpavriksh Developers. The home opens onto a bright living room with 1 balconies overlooking the central green.",
+    "locality": "Sohna Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.41284,
+    "lng": 77.04545,
+    "priceInr": 10400000,
+    "areaSqft": 1000,
+    "bhk": 2,
+    "bathrooms": 2,
+    "balconies": 3,
+    "type": "apartment",
+    "furnished": false,
+    "builder": "Kalpavriksh Developers",
+    "status": "new-launch",
+    "possessionDate": "2027-03-01",
+    "reraNo": "RC/REP/HARERA/GGM/674/381/2024/18",
+    "amenities": [
+      "Yoga Deck",
+      "Tennis Court",
+      "Library",
+      "Banquet Hall",
+      "Senior Citizen Corner",
+      "Cafeteria",
+      "Jogging Track",
+      "Sewage Treatment Plant",
+      "Spa & Sauna"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Zenith Heights — view 1"
+      },
+      {
+        "url": "/properties/home-12.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Zenith Heights — view 2"
+      },
+      {
+        "url": "/properties/home-13.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Zenith Heights — view 3"
+      },
+      {
+        "url": "/properties/home-14.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "2 BHK Apartment at Zenith Heights — view 4"
+      }
+    ],
+    "createdAt": "2025-10-02T00:00:00.000Z"
+  },
+  {
+    "id": "p-054",
+    "slug": "3-bhk-independent-floor-solaris-residences-mg-road-54",
+    "title": "3 BHK Independent Floor in Solaris Residences, MG Road",
+    "description": "3 BHK Independent Floor of 1,798 sq ft at Solaris Residences, MG Road, Gurugram. Under construction, developed by Stonecrest Infra. The home opens onto a double-height living room with 2 balconies overlooking the central green.",
+    "locality": "MG Road",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "lat": 28.4777,
+    "lng": 77.07664,
+    "priceInr": 35100000,
+    "areaSqft": 1798,
+    "bhk": 3,
+    "bathrooms": 2,
+    "balconies": 1,
+    "type": "independent-floor",
+    "furnished": true,
+    "builder": "Stonecrest Infra",
+    "status": "under-construction",
+    "possessionDate": "2027-10-01",
+    "reraNo": "RC/REP/HARERA/GGM/862/157/2024/18",
+    "amenities": [
+      "Gymnasium",
+      "Tennis Court",
+      "Indoor Games Room",
+      "Amphitheatre",
+      "Kids Play Area",
+      "Swimming Pool",
+      "Clubhouse",
+      "Jogging Track",
+      "Senior Citizen Corner",
+      "Spa & Sauna",
+      "Sewage Treatment Plant"
+    ],
+    "images": [
+      {
+        "url": "/properties/home-07.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Residences — view 1"
+      },
+      {
+        "url": "/properties/home-08.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Residences — view 2"
+      },
+      {
+        "url": "/properties/home-09.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Residences — view 3"
+      },
+      {
+        "url": "/properties/home-10.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Residences — view 4"
+      },
+      {
+        "url": "/properties/home-11.jpg",
+        "width": 1600,
+        "height": 1067,
+        "alt": "3 BHK Independent Floor at Solaris Residences — view 5"
+      }
+    ],
+    "createdAt": "2024-11-11T00:00:00.000Z"
+  }
+]

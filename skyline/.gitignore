@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+build
+.env
+.env.local
+
+# Enquiry storage ONLY — the leading slash matters. Written as bare `data`
+# this also matched src/data/, so the seeded properties.json was excluded and
+# the deployed build failed on a missing import.
+/data
+
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store

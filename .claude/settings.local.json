@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node -v)",
+      "PowerShell(npm -v)",
+      "PowerShell(npm view next dist-tags --json)",
+      "PowerShell(npm view three dist-tags --json)",
+      "PowerShell(npm view valibot dist-tags --json)"
+    ]
+  }
+}

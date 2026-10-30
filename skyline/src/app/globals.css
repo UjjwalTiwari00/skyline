@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+/**
+ * Design tokens.
+ *
+ * The brand red and the Abril Fatface / Inter pairing are carried over from
+ * the 100acress Tailwind config so Skyline reads as the same family of
+ * product. Everything else here is new: the old config had a single colour and
+ * no spacing or elevation scale, which is why spacing was inconsistent
+ * page to page.
+ *
+ * Two font families exactly, which is the assignment's limit.
+ */
+@theme {
+  /* Brand — ported from tailwind.config.js `primaryRed`. */
+  --color-brand-50: #fdf3f3;
+  --color-brand-100: #fbe4e5;
+  --color-brand-300: #e8969b;
+  --color-brand-500: #c13b44;
+  --color-brand-600: #a62f38;
+  --color-brand-700: #88262e;
+
+  /* Neutrals lean warm so the red never reads as an alert colour. */
+  --color-ink-50: #faf9f7;
+  --color-ink-100: #f2f0ec;
+  --color-ink-200: #e4e1db;
+  --color-ink-300: #cbc6bd;
+  --color-ink-400: #9a938a;
+  --color-ink-500: #6d665e;
+  --color-ink-600: #4d4740;
+  --color-ink-700: #35302b;
+  --color-ink-800: #211e1b;
+  --color-ink-900: #121110;
+
+  --color-sand: #c9a227;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: var(--font-abril), ui-serif, Georgia, serif;
+
+  /* One elevation scale, so cards and panels cannot drift apart. */
+  --shadow-card: 0 1px 2px rgb(18 17 16 / 0.04), 0 8px 24px -12px rgb(18 17 16 / 0.18);
+  --shadow-card-hover: 0 2px 4px rgb(18 17 16 / 0.06), 0 16px 40px -16px rgb(18 17 16 / 0.28);
+}
+
+@layer base {
+  html {
+    /* Anchor links and "skip to content" land below the sticky header. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-ink-50);
+    color: var(--color-ink-800);
+    font-family: var(--font-sans);
+    /* Stops iOS Safari inflating text in landscape and breaking the grid. */
+    text-rendering: optimizeLegibility;
+  }
+
+  /*
+   * Visible focus everywhere, but only for keyboard users. Tailwind's reset
+   * removes the UA outline, and without this the filters and gallery would be
+   * unusable by keyboard — an explicit requirement.
+   */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Headings use the display face; body text never does. */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  /*
+   * Honour the OS setting globally. The 3D scene checks this too and skips
+   * scrubbed camera work entirely, but this covers every CSS transition on
+   * the site in one place rather than per component.
+   */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Shared by the header CTA and the enquiry submit button. */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-6 py-3
+           text-sm font-semibold text-white transition-colors
+           hover:bg-brand-600 disabled:cursor-not-allowed disabled:bg-ink-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-300
+           bg-white px-6 py-3 text-sm font-semibold text-ink-700 transition-colors
+           hover:border-ink-400 hover:bg-ink-100;
+  }
+
+  /*
+   * Skeletons animate opacity rather than a sliding gradient: a transform
+   * sweep on 12 cards costs real paint time on a mid-range Android, and this
+   * reads the same.
+   */
+  .skeleton {
+    @apply animate-pulse rounded-lg bg-ink-200;
+  }
+}

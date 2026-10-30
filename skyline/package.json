@@ -1,0 +1,40 @@
+{
+  "name": "skyline",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "tsx scripts/seed.ts",
+    "analyze": "cross-env ANALYZE=true next build",
+    "measure": "node scripts/measure-bundle.mjs",
+    "renders": "node scripts/generate-renders.mjs",
+    "test": "tsx --test tests/query.test.ts tests/enquiry.test.ts",
+    "lighthouse": "node scripts/lighthouse.mjs"
+  },
+  "dependencies": {
+    "next": "15.5.28",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "server-only": "^0.0.1",
+    "valibot": "^1.5.0"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "15.5.28",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.186.0",
+    "cross-env": "^7.0.3",
+    "lighthouse": "^12.8.2",
+    "puppeteer-core": "^24.43.1",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.1.14",
+    "three": "^0.186.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.0"
+  }
+}
